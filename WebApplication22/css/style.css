@@ -1,0 +1,2291 @@
+﻿*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+
+body {
+    color: #188c90;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+     background: url('../images/slide3.jpg') fixed center;
+    font-style: normal;
+    background-color: black;
+    height: 100%;
+    
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.HomeLayoutContent {
+    width : 90%;
+    position :absolute;
+    left :1%;
+    top :16%;
+
+    
+} 
+/*home layout ------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* haeder =-----------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+header {
+    z-index:2;
+    color: #188c90;
+    background-color: black;
+    height: 15%;
+    width: 100%;
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    
+    
+}
+header .site-name {
+    color: lightblue;
+    float: left;
+    width: 80%;
+    font-size: 100px;
+    padding: 0 30px;
+     font-family: "Brush Script MT", cursive;
+    
+}
+footer{
+    color: lightblue;
+    background-color: black;
+    height: 8%;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 50px;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    text-align: center;
+}
+header .loginList{
+    float: right;
+    width: 20%;
+    padding: 3% 1%;
+    
+    
+}
+.loginList li{
+   
+     display: inline-block;
+    padding: 10px 0px;
+    margin: 0px 30px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+    .loginList li a {
+         color: #188c90;
+         border-bottom: 2px solid transparent;
+         text-decoration:none;
+    }
+
+
+.loginList li:hover{
+     color: lightblue;
+     border-bottom: 2px solid lightblue;
+}
+.Headimage{
+    position:absolute;
+    top:30%;
+    right: 30%;
+    width: 3%;
+    height: 38%;
+    border-radius: 50%;
+}
+.Headusername{
+    font-size: 24px;
+     position:absolute;
+    top:38%;
+    right: 19%;
+    width: 10%;
+    height: 30%;
+    color: #188c90;
+}
+.Logout{
+     width: 10%;
+    height: 45px;
+    position:absolute;
+    top: 36%;
+    right: 5%;
+    font-size: 24px;
+    color: #188c90;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border:  4px solid  #188c90;
+    transition: all 0.5s ease;
+    text-align: center;
+    text-decoration: none;
+}
+.Logout:hover{
+    color: lightblue;
+     border:  4px solid  lightblue;
+}
+/* S-nav----------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.navbar .options.top {
+    z-index: 2;
+    text-align:center;
+    width: 100%;
+    height:8%;
+    background-color: black;
+     position: fixed;
+    right: 0%;
+    top:15%;
+    border: 5px solid lightblue;
+    border-color:  lightblue  transparent transparent transparent;
+    
+
+}
+.navbar .options.right {
+    float: right;
+    height: 77%;
+    width: 8%;
+    background-color: black;
+     position: fixed;
+    right: 0%;
+    top:15%;
+
+}
+.navbar .options.left {
+    float: left;
+    height: 85%;
+    width: 8%;
+    background-color: black;
+     position: fixed;
+    left: 0%;
+    top:15%;
+
+}
+.navbar .options.top li{
+   
+    display: inline-block;
+    padding: 10px 0px;
+    margin: 0px 30px;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar .options.right li, .navbar .options.left li{
+    width:100%;
+    display: list-item;
+    padding: 10px 0px;
+    margin: 30px 0px;
+    margin-top: 15px;
+    text-align: center;
+     border-bottom: 2px solid transparent;
+}
+
+.navbar .options.right li a{
+    width:100%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.Home:hover, .Profile:hover, .aboutus:hover, .contactus:hover {
+    color: lightblue;
+    border-bottom: 2px solid lightblue;
+     
+}
+.Home.active, .Profile.active, .aboutus.active, .contactus.active {
+    color: lightblue;
+    border-bottom: 2px solid lightblue;
+     
+}
+.Home, .Profile, .aboutus, .contactus {
+  
+    color: #188c90;
+    text-decoration: none;
+    padding-top: 1%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/*login pop up ------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.x{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.PopUpBG{
+    
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+.LoginPopUp{
+    z-index: 100000;
+    background-color: rgba(0,0,0,0.8);
+    width: 40%;
+    height: 78%;
+    color: #188c90;
+    border-radius: 5px;
+    border:  5px solid  #188c90; 
+    transition: all 0.5s ease;
+    position: relative;
+    left: 30%;
+    top : 11%;
+    
+}
+/* loginform*/
+.loginimage {
+    height: 30%;
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
+}
+
+.email , .password {
+
+    width: 50%;
+    height: 50%;
+    font-size: 28px;
+    margin-bottom: 4%;
+    margin-left: 22.5%;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: lightblue;
+    border-bottom:  5px solid  #188c90; 
+    transition: all 1.5s ease;
+    
+}
+ .email.actived , .password.actived{
+
+    width: 62%;
+    height: 30%;
+    font-size: 28px;
+    margin-bottom: 4%;
+    margin-left: 16.5%;
+    background-color:rgba(0,0,0,0.8);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: lightblue;
+    border-bottom:  5px solid  lightblue;
+     transition: all 1.5s ease;
+}
+    
+.submit, .ToRegister {
+    text-decoration:none;
+    width: 20%;
+    font-size: 22px;
+    margin-left: 42%;
+    color: #188c90;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border:  5px solid  #188c90; 
+    transition: all 0.5s ease;
+    text-decoration-line:none;
+}
+.RegisterSpan{
+    margin-left: 15%;
+    font-size: 20px;
+ 
+}
+.ToRegister{
+    width: 18%;
+    margin-left: 5%;
+    margin-bottom: 4%;
+    
+}
+.submit:hover, .ToRegister:hover {
+   color: lightblue; 
+     border:  5px solid  lightblue;
+
+}
+.submit.disabled{
+    transition: all 0.5s ease;
+    width: 150px;
+    color: grey; 
+    font-size: 28px;
+    margin-left: 35%;
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 5px;
+    border:  5px solid  grey;
+
+}
+.submit.faild{
+    transition: all 0.5s ease;
+    width: 170px;
+    color: red; 
+    font-size: 28px;
+    margin-left: 35%;
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 5px;
+    border:  5px solid  red;
+}
+.dots {
+    font-size: 60px;
+    list-style: none;
+    color: lightblue;
+    padding-left: 40%;
+    position: relative;
+
+    
+}
+.dots li{
+    display: inline-block;
+   position: relative;
+    opacity: 0;
+}
+
+/*sign up pop up -----------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.RegisterPopUp{
+    background-color: rgba(0,0,0,0.8);
+    width: 50%;
+    height:78%;
+    color: #188c90;
+    border-radius: 5px;
+    border:  5px solid  #188c90; 
+    transition: all 0.5s ease;
+    position: absolute;
+    left: 25%;
+    top : 11%;
+    
+}
+
+.Remail, .Rphone{
+
+    width: 55%;
+    font-size: 24px;
+    margin-top: 4%;
+    margin-left: 17.5%;
+    margin-right: 170px;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #188c90;
+    border-bottom:  5px solid  #188c90; 
+    transition: all 1.5s ease;
+    
+}
+
+.RFname,.RLname, .Rpassword, .RRpassword{
+    margin-top: 4%;
+    width: 23%;
+    font-size: 24px;
+    margin-left: 17.5%;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #188c90;
+    border-bottom:  5px solid  #188c90; 
+    transition: all 1s ease;
+}
+.RLname , .RRpassword{
+    margin-left: 8.75%;
+}
+.RFname.actived,.RLname.actived , .Rpassword.actived , .RRpassword.actived{
+    margin-top: 4%;
+    width: 30%;
+    font-size: 24px;
+    margin-left: 17.5%;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+     color: lightblue;
+    border-bottom:  5px solid  lightblue;
+    transition: all 1s ease;
+}
+.RLname.actived , .RRpassword.actived{
+    margin-left: 1.8%;
+}
+.RLname.R , .RRpassword.R{
+    margin-left: 1.8%;
+}
+
+.Register-form {
+    position: absolute;
+    top: 22%;
+    left: 25%;
+    font-family: "Open Sans", "Segoe UI";
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+ .Remail.actived, .Rphone.actived {
+
+    width: 60%;
+    font-size: 24px;
+    margin-left: 15%;
+    background-color:rgba(0,0,0,0.8);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: lightblue;
+    border-bottom:  5px solid  lightblue;
+     transition: all 1s ease;
+}
+.Rsubmit {
+    width: 20%;
+    font-size: 22px;
+    margin-left: 42%;
+    margin-top: 4%;
+    color: #188c90;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border:  5px solid  #188c90; 
+    transition: all 0.5s ease;
+    
+}
+.Rsubmit:hover {
+   color: lightblue; 
+     border:  5px solid  lightblue;
+}
+.Rsubmit.disabled {
+    width: 20%;
+    font-size: 24px;
+    margin-left: 42.5%;
+    color: grey;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border:  5px solid  grey; 
+    transition: all 0.5s ease;
+    
+}
+.Rcheckbox, .profilephoto{
+    margin-top: 4%;
+    margin-left: 17.5%;
+    
+}
+
+.TypeSelect{
+    margin-left: 17.5%;
+    margin-top: 4%;
+    width: 20%;
+    font-size: 24px;
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 5px;
+    color: #188c90;
+    border:  none; 
+    transition: all 1s ease;
+}
+.TypeSelect:hover{
+    background-color: lightblue;
+}
+.TypeSelect.actived{
+    
+background-color: lightblue;
+}
+
+
+/*---------------------------------------------------------index-------------------------
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* form----------------------------------------
+-------------*/
+.mdsubmitpro{
+background-color: rgba(0,0,0,0.6);
+border: 3px solid #188c90;
+color: #188c90;
+margin-left: 30px;
+width:70px;
+height:30px;
+}
+.pramter{
+    display:none;
+}
+.CreateProject{
+    height: 25%;
+    background-color: rgba(0,0,0,0.8);
+    width: 90%;
+    transition: all 1.5s ease;
+    margin-left: 5%;
+    
+}
+
+
+.CreateProjectForm{
+    height: 100%;
+    margin-left: 9%;
+}
+.description{
+    margin-bottom: 10px;
+    width: 90%;
+    height: 150px;
+    font-size: 20px;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: lightblue;
+    resize:none;
+    overflow:hidden;
+    border-bottom:  5px solid  #188c90; 
+    transition: all 1.5s ease;
+    display: block;
+
+}
+.projectname{
+ width: 90%;
+
+ height: 40px;
+ font-size: 20px;
+ color:lightblue;
+  background-color:rgba(0,0,0,0.5);
+  border: none;
+ outline: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: all 0.5s ease;
+}
+
+
+.SubmitProject{
+    width: 15%;
+    margin-left: 35%;
+    height: 40px;
+    font-size: 20px;
+    color: #188c90;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border-bottom:  5px solid  #188c90;
+    transition: all 0.5s ease;
+    text-align: center;
+    margin-bottom:15px;
+   
+    
+}
+ .price.disabled, .suggestMD.disabled , .description.disabled{
+    border-bottom:  5px solid  grey;
+    color:grey;
+}
+ .SubmitProject.disabled{
+      border:  5px solid  grey;
+    color:grey;
+ }
+
+.SubmitProject{
+   
+     border:  5px solid  #188c90;
+      text-decoration:none;
+}
+.CreateProjectLabel{
+    text-align: center;
+    margin-right: 2%;
+}
+.CurrentProject{
+    width:100%;
+    margin-top: 10px;
+    height: 70%;
+    transition: all 1.5s ease;
+    position:relative;
+
+    
+}
+.CurrentProject.mini{
+    width:100%;
+    margin-top: 10px;
+    height: 45%;
+    transition: all 0.5s ease;
+   
+}
+.CurrentProject.max{
+    width:100%;
+    margin-top: 10px;
+    height: 85%;
+    transition: all 0.5s ease;
+    
+}
+    #tableproject{
+
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+    }
+
+    indexpostsdiv{
+    position:relative;
+    margin-bottom:20px;
+  
+
+}
+.indexpostsimg{
+    width:70px;
+    height:70px;
+    margin: 15px;
+}
+.homeprojectname, .homeclient{
+  position:absolute;
+  top: 45px;
+  left:95px;
+    color:lightblue;
+    font-size: 20px;
+}
+.homeclient{
+    position:absolute;
+  top: 15px;
+  left:95px;
+}
+
+.homeprojectnameS{
+  position:absolute;
+  top: 45px;
+  left:230px;
+    font-size: 20px;
+}
+.homeclientS {
+    position: absolute;
+    top: 15px;
+    left: 170px;
+    font-size: 20px;
+}
+.homeprojectdiv{
+    position:relative;
+    margin-left:10%;
+    width: 80%;
+    word-wrap:break-word;
+    line-height: 1.75;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.9);
+    margin-bottom: 20px;
+    
+}
+.homedesc{
+    padding: 10px;
+}
+.homeRow:nth-child(odd){background-color: #188c90;
+color: beige;
+    
+}
+.MDsignstartday, .MDsignstartmonth,.MDsignstartyears, .MDsignendday, .MDsignendmonth, .MDsignendyears{
+    
+    width: 80px;
+    font-size: 24px;
+    background-color:black;
+    border-radius: 5px;
+    color: #188c90;
+    border:  none; 
+    transition: all 1s ease;
+    
+ }
+ 
+ .MDsignendday, .MDsignstartday{
+     margin-left:50px;
+ }
+ 
+ 
+
+ .MDsignPriceT{
+          border: none;
+            border-radius: 5%;
+            width: 90px;
+            text-align: center;
+            height: 40px;
+            color: #188c90;
+            background-color: rgba(0,0,0,0.8);
+            border-bottom: 5px solid #188c90;
+            font-size: 16px;
+            margin-left: 20px;
+           
+ }
+ .Customesigncontrol{
+     position:relative;
+     background-color: rgba(0,0,0,0.6);
+     height:110px;
+ }
+ .SignProjectP{
+     text-align:center;
+     color:lightblue;
+ }
+ .signStartdateS, .signEnddateS{
+     position:absolute;
+     top: 23px;
+     left:130px;
+
+ }
+ .signEnddateS{
+      position:absolute;
+     left:430px;
+ }
+/************************************************************************************/
+  .SignProject {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 150px;
+  height: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.scrolldiv{
+    position:absolute;
+    top:5%;
+    width:98%; 
+    overflow:auto;
+    margin-bottom:50px;
+}
+
+
+
+.SignProject .SignSpan {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.SignProject .SignSpan:after {
+  content: '\00bb';
+  transition: 0.5s;
+    
+}
+
+.SignProject:hover .SignSpan {
+  padding-right: 25px;
+}
+
+.SignProject:hover .SignSpan:after {
+  opacity: 1;
+  right: 0;
+}
+.TopTable
+{
+    height: 100%;
+    width: 80%;
+}
+/*****************************************----------------------------------------------------------------------********************************************/
+        .ProjectHead,.OwnerHead,.DescriptionHead,.ApprovalHead{
+            font-size: 20px;
+            background-color: white;
+            height: 30px;
+            text-align: center;
+        }
+        
+
+/* E-av------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------*/
+.clearfix{
+    clear: both
+}
+
+/* customer profile layout--------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+   /*Customer nav*/
+
+
+ /*customer*/
+  .CustomerProfileLayoutContent{
+        width: 50%;
+            position: absolute;
+             top: 24%;
+            left:48%;
+      background-color:transparent;
+  }      
+ .CustomerOptions{
+     z-index:2;
+     background-color:black;
+     height: 70px;
+     width:50%;
+     position:fixed;
+     margin-bottom:10px;
+ }
+       
+        
+ .profiledivincustomer{
+     background-color: rgba(0,0,0,0.7);
+            width: 40%;
+            height: 67%;
+          
+            position:fixed;
+            left:2%;
+            top: 24%;
+        }
+  .profileimage{
+            height: 20%;
+            width: 20%;
+            border-radius: 50%;
+            position: absolute;
+            left: 40%;
+            top: 2%;
+        }
+  .firstnameprofileinCustomer,.lastnameprofileinCustomer,.EmailprofileinCustomer,.phoneprofileinCustomer{
+            
+            color: lightblue;
+            font-family: cursive;
+            font-size: 150%;
+        }
+ 
+  .firstnameprofileinCustomer{
+            position: absolute;
+            top: 28%;
+            left: 5%;
+        }
+  .lastnameprofileinCustomer{
+            position: absolute;
+            top: 40%;
+            left: 5%;
+        
+        }
+   .EmailprofileinCustomer{
+            position: absolute;
+            top: 52%;
+            left: 5%;
+        
+   }
+        .phoneprofileinCustomer{
+            position: absolute;
+            top: 64%;
+            left: 5%;
+        
+    }
+        .firstnameprofileDatainCustomer,.lastnameprofileDatainCustomer,.emailprofileDatainCustomer,.phoneprofileDatainCustomer{
+            border: none;
+            border-radius: 5%;
+            width: 36%;
+            text-align: center;
+            height: 10%;
+            color: #188c90;
+            background-color: rgba(0,0,0,0.8);
+            border-bottom: 5px solid #188c90;
+            font-size: 150%;
+
+        }
+ .firstnameprofileDatainCustomer{
+            position: absolute;
+            top: 31%;
+            left: 40%;
+        }
+   .lastnameprofileDatainCustomer{
+            position: absolute;
+            top: 43%;
+            left: 40%;
+        }
+    .emailprofileDatainCustomer{
+            position: absolute;
+            top: 55%;
+            left: 40%;
+        }
+    .phoneprofileDatainCustomer{
+            position: absolute;
+            top: 67%;
+            left: 40%;
+        }
+        
+
+   .tableprojectinCustomer{
+        width: 100%;
+        position: absolute;
+        top: 00%;
+        color: black;
+    }
+.NotDeliveredProjects, .DeliveredProjects, .ProfilePostProject{
+    width:25%;
+    height: 55px;
+    position:absolute;
+    top:1%;
+    left:5%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    padding-top: 1%;
+    text-align:center;
+    margin-top: 5px;
+
+}
+.DeliveredProjects{
+    position:absolute;
+    left: 35%;
+}
+.ProfilePostProject{
+    position:absolute;
+    left: 65%;
+}
+.ProfilePostdescription{
+    margin-bottom: 10px;
+    width: 80%;
+    height: 60%;
+    font-size: 24px;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: lightblue;
+    resize:none;
+    overflow:hidden; 
+    display: block;
+    position: absolute;
+    top: 5%;
+    left:10%;
+
+}
+.ProfileCreateProjectForm{
+    margin-top: 70px;
+    height: 420px;
+}
+
+ .ProfilePostprice, .ProfilePostsuggestMD{
+    width: 20%;
+    height: 40px;
+    font-size: 20px;
+    color: #188c90;
+    background-color:black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border-bottom:  5px solid  #188c90;
+    transition: all 0.5s ease;
+    text-align: center;
+    position:absolute;
+    top: 70%;
+    left: 40%;
+    
+}
+ .ProfilePostsuggestMD{
+     position:absolute;
+     left: 60%;
+ }
+ .ProfilePostsuggestMD:hover{
+    background-color: lightblue;
+}
+ .ProfilePostSubmitProject {
+    width: 20%;
+    font-size: 22px;
+    color: #188c90;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border:  5px solid  #188c90; 
+    transition: all 0.5s ease;
+    position:absolute;
+    top: 83%;
+    left:40%;
+}
+
+
+     
+    .NotDeliveredProjects.active, .DeliveredProjects.active,.ProfilePostProject.active, .NotDeliveredProjects:hover, .DeliveredProjects:hover, .ProfilePostProject:hover {
+         background-color: rgba(0,0,0,0.8);
+     color: lightblue;
+    border-color: transparent transparent lightblue transparent;
+    border-bottom: 5px solid ;
+    }
+
+
+.tdincustomer{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+        
+
+.trinCustomer:nth-child(odd){background-color: #188c90;}
+.trinCustomer:nth-child(even){color: beige;}
+.EdittableprojectinCustomer, .RemovetableprojectinCustomer{
+    color: #188c90;
+    background-color: rgba(0,0,0,0.6);
+    font-size: 20px;
+    text-align: center;
+    border-color: transparent;
+    border-radius: 5%;
+    margin-left:20px;
+
+}
+        
+ .ProfileCreateProjectForm{
+            
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 10%;
+            overflow-y: auto;
+            background-color: rgba(0,0,0,0.5);
+ }
+
+.DeliveredTable , .NotDeliveredTable{
+     position:absolute;
+     top: 70px;
+     width:100%;
+    margin-top:10px;
+     margin-bottom: 50px;
+
+ }
+        
+        .divallinCustomerProfile{
+            width: 100%;
+            background-color: rgba(0,0,0,.7);
+            position: relative;
+        }
+ .EditNotDeliveredform{
+      width: 100%;
+      height: 400px;
+            position: absolute;
+            left: 0;
+            top: 40px;
+            overflow-y: auto;
+            background-color: rgba(0,0,0,0.5);
+}
+.EditNotDeliveredDescription{
+     margin-bottom: 10px;
+    width: 80%;
+    height: 200px;
+    font-size: 24px;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: lightblue;
+    resize:none;
+    overflow:hidden; 
+    display: block;
+    position: absolute;
+    top: 5%;
+    left:10%;
+}
+.EditNotDeliveredsuggestMD, .EditNotDeliveredSubmit{
+     width: 20%;
+    height:40px;
+    font-size: 20px;
+    color: #188c90;
+    background-color:black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border-bottom:  5px solid  #188c90;
+    transition: all 0.5s ease;
+    text-align: center;
+    position:absolute;
+    top: 250px;
+    left: 25%;
+}
+.EditNotDeliveredSubmit{
+    position:absolute;
+    left: 60%;
+}
+
+.EditNotDeliveredsuggestMD:hover{
+    background-color: lightblue;
+}
+.CustomerBacktoNotDeliveredFromEdit{
+       width:30%;
+    height: 40px;
+    position:absolute;
+    top:350px;
+    left:35%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    padding-top: 1%;
+    text-align:center;
+ }
+.CustomerBacktoNotDeliveredFromEdit:hover{
+     color: lightblue;
+    background-color: rgba(0,0,0,0.8);
+    border-color: transparent transparent lightblue transparent;
+}
+
+                                                /* Trainee*/
+.MTRequests, .MTCurrentProjects, .MTQualifications, .MTHistory{
+    width:17%;
+    height: 55px;
+    position:absolute;
+    top:1%;
+    left:5%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    padding-top: 10px;
+    text-align:center;
+
+}
+.MTCurrentProjects{
+    position:absolute;
+    left: 27%;
+}
+.MTQualifications{
+    position:absolute;
+    left: 49%;
+}
+.MTHistory{
+    position:absolute;
+    left: 71%;
+}
+.MTRequests:hover, .MTCurrentProjects:hover, .MTQualifications:hover, .MTHistory:hover {
+    border-color: transparent transparent lightblue transparent;
+    background-color: rgba(0,0,0,0.8);
+}
+.MTRequests.active, .MTCurrentProjects.active, .MTQualifications.active, .MTHistory.active {
+    border-color: transparent transparent lightblue transparent;
+    background-color: rgba(0,0,0,0.8);
+}
+ .MTRequestsTable, .MTCurrentProjectsTable, .MTHistoryTable{
+            position:absolute;
+            top: 70px;
+            margin-top: 10px;
+            width: 100%;
+            overflow-y: auto;
+            background-color: rgba(0,0,0,0.5);
+            
+ }
+ .MTAcceptProject, .MTRefuseProject, .MTRemoveProject{
+    color: #188c90;
+    background-color: rgba(0,0,0,0.6);
+    font-size: 150%;
+    text-align: center;
+    border-color: transparent;
+    border-radius: 5%;
+    margin-left:20%;
+
+}
+ .MTQualificationsDiv{
+     background-color: rgba(0,0,0,0.7);
+      position:absolute;
+      top: 70px;
+      margin-top: 10px;
+     width:100%;
+     height: 380px;
+ }
+ .piechartdiv {
+     height:40%;
+     width:40%;
+     position:absolute;
+     left: 10%;
+     top: 15%;
+ }
+ .Java, .Python , .Php, .Asp{
+      width:17%;
+    height: 8%;
+    position:absolute;
+    top:15%;
+    right:5%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    padding-top: 1%;
+    text-align:center;
+ }
+ .Java.disabled, .Python.disabled , .Php.disabled, .Asp.disabled{
+    
+    color: grey;
+    border-color: transparent transparent grey transparent;
+   
+ }
+ .Python{
+      position:absolute;
+    top:28%;
+ }
+ .Php{
+      position:absolute;
+    top:41%;
+ }
+ .Asp{
+      position:absolute;
+    top:54%;
+ }
+ .ShowChart, .EnableChart{
+      width:17%;
+    height: 8%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+      position:absolute;
+    top:85%;
+    left:22%;
+    border-color: #188c90;
+    border: 5px solid ;
+     text-align:center;
+     border-radius: 5%;
+        
+ }
+ .EnableChart{
+      width:25%;
+      position:absolute;
+    left:70%;
+ }
+/*MD Layout ---------------------------------------------------------------------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------------------------------------------------------*/
+.Dmember{
+    float:right;
+    color:#188c90;
+    border: 3px solid #188c90;
+    margin-right: 50px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.MDManagedProjects, .MDDeliveredProjects, .MDhistory ,.MDQualifications, .BacktocurrentprojectFromHistory,.MDLeavingRequests
+{
+     width:90%;
+    height: 40px;
+    position:absolute;
+    top:10%;
+    right:0%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    padding-top: 1%;
+    text-align:center;
+}
+
+.MDhistory{
+    position:absolute;
+     top:28%;
+
+}
+.MDQualifications{
+    position:absolute;
+     top:46%;
+}
+
+.BacktocurrentprojectFromHistory,.MDLeavingRequests{
+    position:absolute;
+    top:64%
+}
+.Leavingmember{    color: lightblue;}.MDAcceptLeaving, .MDRefuseLeaving{    color: lightblue;    text-decoration:none;    margin-left:50px;    border: 5px solid #188c90;    }
+
+    .MDManagedProjects:hover, .MDhistory:hover, .MDQualifications:hover {
+         border-color: transparent transparent lightblue transparent;
+    background-color: rgba(0,0,0,0.8);
+    }
+    .MDManagedProjects.active, .MDhistory.active, .MDQualifications.active {
+      border-color: transparent transparent lightblue transparent;
+    background-color: rgba(0,0,0,0.8);
+    }
+.MDProfileContent{
+    width: 90%;
+   
+    position:absolute;
+    left: 9%;
+    top: 47%;
+    background-color:rgba(0,0,0,0.4);
+}
+
+.profiledivinMD{
+            width: 90%;
+            height: 30%;
+            background-color: black;
+            position:fixed;
+            left:9%;
+            top: 16%;
+            z-index: 2;
+        }
+  .MDProfileImage{
+            height: 50%;
+            width: 8%;
+            border-radius: 50%;
+            position: absolute;
+            left: 5%;
+            top: 3%;
+        }
+  .firstnameprofileinMD,.lastnameprofileinMD,.EmailprofileinMD,.phoneprofileinMD, .jobprofileinMD{
+            
+            color: lightblue;
+            font-family: cursive;
+            font-size: 150%;
+        }
+ 
+  .firstnameprofileinMD{
+            position: absolute;
+            top: 5%;
+            left: 25%;
+        }
+  .lastnameprofileinMD{
+            position: absolute;
+            top: 5%;
+            left: 60%;
+        
+        }
+   .EmailprofileinMD{
+            position: absolute;
+            top: 50%;
+            left: 25%;
+        
+   }
+        .phoneprofileinMD{
+            position: absolute;
+            top: 50%;
+            left: 60%;
+        
+    }
+.jobprofileinMD{
+    position: absolute;
+    top: 50%;
+    left: 5.5%;
+}
+  .firstnameprofileDatainMD,.lastnameprofileDatainMD,.emailprofileDatainMD,.phoneprofileDatainMD{
+            border: none;
+            border-radius: 5%;
+            width: 15%;
+            text-align: center;
+            height: 18%;
+            color: #188c90;
+            background-color: rgba(0,0,0,0.8);
+            border-bottom: 5px solid #188c90;
+            font-size: 150%;
+
+        }
+ .firstnameprofileDatainMD{
+            position: absolute;
+            top: 12%;
+            left: 35%;
+        }
+   .lastnameprofileDatainMD{
+            position: absolute;
+            top: 12%;
+            left: 70%;
+        }
+    .emailprofileDatainMD{
+            position: absolute;
+            top: 57%;
+            left: 35%;
+        }
+    .phoneprofileDatainMD{
+            position: absolute;
+            top: 57%;
+            left: 70%;
+        }
+        
+                                                             /*MD Profile*/
+.divallinMDProfile{
+            width: 100%;
+            position: relative;
+        }
+ .MDCurrentProjects{
+             width:90%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            overflow-y: auto;
+            height:100%;
+            background-color: rgba(0,0,0,0.5);
+  }   
+ .MDAddTeamleader, .MDAddTrainee, .MDControlProject{
+    color: #188c90;
+    background-color: rgba(0,0,0,0.6);
+    font-size: 20px;
+    text-align: center;
+    border-color: transparent;
+    border-radius: 5%;
+    text-decoration: none;
+    margin-left: 25px;
+
+}
+ .MDAddTeamleaderTable, .MDAddTraineeTable, .MDDeletememberTable{
+       width:100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            overflow-y: auto;
+            height:80%;
+            background-color: rgba(0,0,0,0.5);
+ }                                   
+                      
+ .teamleadercheckbox , .traineecheckbox, .membercheckbox{
+    float:right;
+    margin-right: 50px;
+     width:20px;
+     height: 20px;
+     margin-top:2px;
+
+ }
+ .Backtocurrentproject , .submitteamleader{
+     width:15%;
+    height: 40px;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    padding-top: 5px;
+    text-align:center;
+   
+    
+ }
+ .requestchanges{
+     background-color: rgba(0,0,0,0.6);
+     border-radius:5%;
+     border-color: transparent transparent #188c90 transparent;
+     width:17%;
+     height:40px;
+     color: #188c90;
+     position:absolute;
+     top: 70%;
+     left:40%;
+     border: 5px solid #188c90;
+ }
+ .Backtocurrentproject
+ {
+     width:90%;
+     position:absolute;
+    top:45%;
+    right:0;
+ }
+ .MDControlProfilediv{
+     height:380px;
+ }
+ .submitteamleader{
+
+      margin-left: 41%;
+ }
+
+ 
+.Backtocurrentproject:hover, .submitteamleader:hover {
+    color: lightblue;
+    background-color: rgba(0,0,0,0.9);
+    border-color: transparent transparent lightblue transparent;
+}
+
+ .MDstartS, .MDendS, .MDSetPriceS{
+      color: lightblue;
+            font-family: cursive;
+            font-size: 150%;
+            position:absolute;
+            top: 10%;
+            left: 10%;
+ }
+ .MDendS{
+     position:absolute;
+            top: 10%;
+            left: 40%;
+ }
+
+ .MDSetPriceS{
+     position:absolute;
+            top: 30%;
+            left: 10%;
+ }
+   .MDSetPriceT{
+            border: none;
+            border-radius: 5%;
+            width: 15%;
+            text-align: center;
+            height: 10%;
+            color: #188c90;
+            background-color: rgba(0,0,0,0.8);
+            border-bottom: 5px solid #188c90;
+            font-size: 150%;
+            position:absolute;
+            top: 10%;
+            left: 30%;
+ }
+   .MDcontrolstartday, .MDcontrolstartmonth,.MDcontrolstartyears, .MDcontrolendday, .MDcontrolendmonth, .MDcontrolendyears{
+      position:absolute;
+     top: 10%;
+     left: 15%;
+    width: 6%;
+    font-size: 24px;
+    background-color:black;
+    border-radius: 5px;
+    color: #188c90;
+    border:  none; 
+    transition: all 1s ease;
+ }
+ .MDcontrolstartmonth{
+      position:absolute;
+     top: 10%;
+     left: 22%;
+ }
+ .MDcontrolstartyears{
+      position:absolute;
+     top: 10%;
+     left: 29%;
+ }
+ .MDcontrolendday{
+      position:absolute;
+     top: 10%;
+     left: 43%;
+ }
+ 
+ .MDcontrolendmonth{
+      position:absolute;
+     top: 10%;
+     left: 50%;
+ }
+ .MDcontrolendyears{
+     position:absolute;
+     top: 10%;
+     left: 57%;
+ }
+
+ .MDSetPriceT{
+      position:absolute;
+            top: 30%;
+            left: 30%;
+ }
+ .ProjectStatusSelect{
+     position:absolute;
+     top: 50%;
+     left: 15%;
+    width: 20%;
+    font-size: 24px;
+    background-color:black;
+    border-radius: 5px;
+    color: #188c90;
+    border:  none; 
+    transition: all 1s ease;
+ }
+ .MDDeleteMember , .MDLeaveProject , .BacktocurrentprojectFromControll{
+       width:17%;
+    height: 10%;
+    position:absolute;
+    top:10%;
+    left:65%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    padding-top: 1%;
+    text-align:center;
+ }
+  .MDLeaveProject{
+      position:absolute;
+      top: 30%;
+  }
+  .BacktocurrentprojectFromControll{
+      position:absolute;
+      top: 50%;
+  }
+.MDDeleteMember:hover, .MDLeaveProject:hover, .BacktocurrentprojectFromControll:hover {
+    color: lightblue;
+    background-color: rgba(0,0,0,0.9);
+    border-color: transparent transparent lightblue transparent;
+}
+.MDDescriptionS , .MDScheduleS, .MDPriceS, .MDStatusS{
+      color: lightblue;
+            font-family: cursive;
+            font-size: 150%;
+            position:absolute;
+            top: 5%;
+            left: 45%;
+}
+.MDScheduleS{
+ position:absolute;
+            top: 55%;
+            left: 10%;
+}
+.MDPriceS{
+     position:absolute;
+            top: 55%;
+            left: 40%;
+}
+.MDStatusS{
+     position:absolute;
+            top: 55%;
+            left: 70%;
+}
+.MDDescriptionL {
+     border: none;
+            
+            width: 80%;
+            text-align: center;
+            height: 30%;
+            color: #188c90;
+            background-color: rgba(0,0,0,0.8);
+           
+            font-size: 150%;
+            position:absolute;
+            left: 10%;
+            top: 17%;
+}
+ .MDScheduleL , .MDPriceL ,.MDStatusL{
+            border: none;
+            border-radius: 5%;
+            width: 15%;
+            text-align: center;
+            height: 10%;
+            color: #188c90;
+            background-color: rgba(0,0,0,0.8);
+            border-bottom: 5px solid #188c90;
+            font-size: 150%;
+            position:absolute;
+            top: 55%;
+            left: 20%;
+}
+.MDPriceL{
+    position:absolute;
+            top: 55%;
+            left: 50%;
+}
+.MDStatusL{
+    position:absolute;
+            top: 55%;
+            left: 80%;
+}
+.BacktocurrentprojectFromDescription{
+     width:17%;
+    height: 10%;
+    position:absolute;
+    top:75%;
+    left:41%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    padding-top: 0.75%;
+    text-align:center;
+}
+.BacktocurrentprojectFromDescription:hover{
+     background-color: rgba(0,0,0,0.9);
+    border-color: transparent transparent lightblue transparent;
+}
+.MDHistoryTable{
+     width:90%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            overflow-y: auto;
+            height:80%;
+            background-color: rgba(0,0,0,0.5);
+}
+
+.BacktocurrentprojectFromHistory:hover{
+     background-color: rgba(0,0,0,0.9);
+    border-color: transparent transparent lightblue transparent;
+}
+.MDJava, .MDPhp, .MDPython, .MDAsp{
+    background-color: rgba(0,0,0,0.7);
+    border: 5px solid #188c90;
+    height: 40px;
+    position:absolute;
+    top:50px;
+    right: 230px;
+}
+.MDPhp{
+     position:absolute;
+    top:110px;
+}
+.MDPython{
+     position:absolute;
+    top:170px;
+}
+.MDAsp{
+     position:absolute;
+    top:230px;
+}
+.MDpiechartdiv{
+     height:300px;
+     width:300px;
+     position:absolute;
+     left: 10%;
+     top: 0px;
+}
+
+.MDShowChart ,.MDEnableChart{
+    border: 5px solid #188c90;
+    background-color: rgba(0,0,0,0.6);
+    color: #188c90;
+    position:absolute;
+    top:100px;
+    left: 48%;
+}
+.MDShowChart{
+     position:absolute;
+    top: 150px;
+    left: 50%;
+}
+/*----------------------------------admin---------------------------------------------------------------------*/
+.AdminProfileControlPostTable{
+      width:85%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            overflow-y: auto;
+            height:100%;
+            background-color: rgba(0,0,0,0.5);
+}
+.AdminControlPost , .AdminControlUser{
+      width:90%;
+    height: 40px;
+    position:absolute;
+    top:25%;
+    right:0%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    text-align:center;
+    padding-top: 1%;
+}
+.AdminCreatePost, .AdminCreateUser{
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    position:absolute;
+    top:2%;
+    right:12%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-color: #188c90;
+    border: 3px solid ;
+    text-decoration: none;
+    text-align:center;
+    border-radius: 50%;
+    
+}
+    .AdminCreatePost:hover, .AdminCreateUser:hover {
+    background-color: rgba(0,0,0,0.9);
+    border-color: lightblue;
+    color: lightblue;
+    }
+.AdminControlUser{
+     position:absolute;
+    top:50%;
+}
+.AdminControlPost.active , .AdminControlUser.active, .AdminControlPost:hover , .AdminControlUser:hover{
+     background-color: rgba(0,0,0,0.9);
+    border-color: transparent transparent lightblue transparent;
+}
+.AdminProfileControlProject{
+     color: #188c90;
+    background-color: rgba(0,0,0,0.6);
+    font-size: 20px;
+    text-align: center;
+    border-color: transparent;
+    border-radius: 5%;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.AdminEditDescription ,.AdminCreateDescription{
+
+    width: 90%;
+    height: 250px;
+    font-size: 20px;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: lightblue;
+    resize:none;
+    overflow:hidden;
+    border-bottom:  5px solid  #188c90; 
+    transition: all 1.5s ease;
+    display: block;
+    position:absolute;
+    left:5%;
+    top: 10%;
+}
+.AdminEditDescriptionS ,.AdminCreateDescriptionS{
+    color: lightblue;
+    font-size: 22px;
+    position:absolute;
+    left: 45%;
+    top:1%;
+}
+.AdminEditsuggestMD ,.AdminAddsuggestMD{
+     width: 20%;
+    height: 8%;
+    font-size: 20px;
+    color: #188c90;
+    background-color:black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border-bottom:  5px solid  #188c90;
+    transition: all 0.5s ease;
+    text-align: center;
+    position:absolute;
+    top: 65%;
+    left: 10%;
+}
+ .AdminSaveEdit, .AdminEditPost, .AdminRemovePost, .AdminSubmitCreatePost, .adminprojectname{
+    width:10%;
+    height: 40px;
+    position:absolute;
+    top:270px;
+    left:50%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.7);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    text-align:center;
+ }
+ .AdminSaveEdit{
+ position:absolute;
+    top:270px;
+    left:20%;
+ }
+
+ .AdminSubmitCreatePost{
+     width: 17%;
+ }
+ .adminprojectname{
+     width:15%;
+      position:absolute;
+    left:30%;
+ }
+ .AdminEditPost{
+     position:absolute;
+    left:35%;
+ }
+ .AdminBackToProjectsFromCreate{
+     width:15%;
+    height: 40px;
+    position:absolute;
+    top:270px;
+    left:70%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.8);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    padding-top: 8px;
+    text-align:center;
+}
+ .Adminselectuser{
+        width: 20%;
+    height: 40px;
+    font-size: 20px;
+    color: #188c90;
+    background-color:black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border-bottom:  5px solid  #188c90;
+    transition: all 0.5s ease;
+    text-align: center;
+    position:absolute;
+    top: 270px;
+    left: 5%;
+    
+ }
+ .AdminRemovePost{
+      position:absolute;
+    left:40%;
+    width: 15%;
+     color: red;
+     border-color: transparent transparent red transparent;
+     padding-top: 10px;
+ }
+.AdminSaveEdit:hover, .AdminEditPost:hover, .AdminBackToProjectsFromControl:hover, .AdminSubmitCreatePost:hover, .AdminBackToProjectsFromControlUser:hover {
+    background-color: rgba(0,0,0,0.9);
+    border-color: transparent transparent lightblue transparent;
+    }
+.AdminBackToProjectsFromControl, .AdminBackToProjectsFromControlUser{
+     width:15%;
+    height: 40px;
+   
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    padding-top: 8px;
+    text-align:center;
+}
+
+.AdminBackToProjectsFromControlUser{
+     width:90%;
+position:absolute;
+    top:75%;
+    right:0;
+}
+.AdminBackToProjectsFromControl{
+ position:absolute;
+    top:270px;
+    left:65%;
+}
+.AdminControlTraineeTable ,.AdminControlCustomerTable ,.AdminControlTeamleaderTable, .AdminControlMDTable{
+             width:85%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            overflow-y: auto;
+            height:85%;
+            background-color: rgba(0,0,0,0.5);
+}
+.AdminControltrainee ,.AdminControlCustomer , .AdminControlTeamLeader, .AdminControlMD{
+     width:90%;
+    height: 40px;
+    position:absolute;
+    top:15%;
+    right:0%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    padding-top: 10px;
+    text-align:center;
+}
+.AdminControlCustomer{
+    position:absolute;
+    top:30%;
+}
+.AdminControlTeamLeader{
+    position:absolute;
+    top:45%;
+}
+.AdminControlMD{
+     position:absolute;
+    top:60%;
+}
+    .AdminControltrainee.active, .AdminControlCustomer.active, .AdminControlTeamLeader.active, .AdminControlMD.active {
+    
+    background-color: rgba(0,0,0,0.9);
+    border-color: transparent transparent lightblue transparent;
+    }
+    .AdminRemoveCustomer , .AdminRemoveMD , .AdminRemoveTrainee, .AdminRemoveTeamleader{
+         color: #188c90;
+    background-color: rgba(0,0,0,0.6);
+    font-size: 24px;
+    text-align: center;
+    border-color: transparent;
+    border-radius: 5%;
+    text-decoration: none;
+    float:right;
+    margin-right: 50px;
+    margin-top: 10px;
+    }
+.AdminCreateuserFname, .AdminCreateuserLname, .AdminCreateuserEmail, .AdminCreateuserPhone {
+    background-color:rgba(0,0,0,0.8);
+    border: 5px solid #188c90;
+    border-color: transparent transparent #188c90 transparent; 
+    border-radius: 5%;
+    width:15%;
+    height:40px;
+       position:absolute;
+            top: 95px;
+            left: 35%;
+
+}
+.AdminCreateuserLname{
+     position:absolute;
+            top: 95px;
+            left: 65%;
+}
+.AdminCreateuserEmail{
+     position:absolute;
+            top: 175px;
+            left: 35%;
+}
+.AdminCreateuserPhone{
+      position:absolute;
+            top: 175px;
+            left: 65%;
+}
+.AdminCreateSubmit{
+    background-color:rgba(0,0,0,0.8);
+    border: 5px solid #188c90;
+    border-radius: 5%;
+    width:15%;
+    height:40px;
+       position:absolute;
+            top: 300px;
+            left: 35%;
+            color: #188c90;
+}
+    .AdminCreateuserFnameP, .AdminCreateuserLnameP, .AdminCreateuserEmailP, .AdminCreateuserPhoneP{
+         border: none;
+            width: 15%;
+            text-align: center;
+            height: 40px;
+            color: lightblue;
+            font-size: 24px;
+            position:absolute;
+            top: 80px;
+            left: 20%;
+    }
+    .AdminCreateuserLnameP{
+        position:absolute;
+            top: 80px;
+            left: 50%;
+    }
+    .AdminCreateuserEmailP{
+         position:absolute;
+            top: 160px;
+            left: 20%;
+    }
+    .AdminCreateuserPhoneP{
+           position:absolute;
+            top: 160px;
+            left: 50%;
+    }
+    .AdminCreateImage{
+        width:130px;
+        height:130px;
+        position:absolute;
+        top: 100px;
+        left:5%;
+        border-radius: 50%;
+    }
+                                                                    /* Team Leader*/
+.teamleaderrequests ,.teamleadercurrent, .teamleaderhistory ,.teamleaderevaluate ,.teamleaderquilifications,.Backtoteamleadercurrentproject{
+      width:90%;
+    height: 50px;
+    position:absolute;
+    top:0%;
+    right:0%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    padding-top: 8px;
+    text-align:center;
+}
+    .teamleaderrequests:hover, .teamleadercurrent:hover, .teamleaderhistory:hover, .teamleaderevaluate:hover, .teamleaderquilifications:hover, .Backtoteamleadercurrentproject:hover {
+    
+     color: lightblue;
+    background-color: rgba(0,0,0,0.8);
+    border-color: transparent transparent lightblue transparent;
+    }
+    .teamleaderrequests.active, .teamleadercurrent.active, .teamleaderhistory.active, .teamleaderevaluate.active, .teamleaderquilifications.active, .Backtoteamleadercurrentproject.active {
+        color: lightblue;
+    background-color: rgba(0,0,0,0.8);
+    border-color: transparent transparent lightblue transparent;
+    
+    }
+.teamleadercurrent{
+    position:absolute;
+    top:20%;
+}
+ .teamleaderhistory, .Backtoteamleadercurrentproject{
+      position:absolute;
+    top:40%;
+ }
+
+.teamleaderquilifications{
+     position:absolute;
+    top:60%;
+}
+.teamleaderDiv{
+            width:85%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            overflow-y: auto;
+            background-color: rgba(0,0,0,0.5);
+}
+.MDOptions{
+    height:400px;
+    width:15%;
+    position:fixed;
+    right:0;
+}
+.teamleaderimg{
+    width:70px;
+    height:70px;
+    margin: 15px;
+}
+.teamleaderprojectname, .teamleaderclient{
+  position:absolute;
+  top: 45px;
+  left:95px;
+    color:lightblue;
+    font-size: 20px;
+}
+.teamleaderclient{
+    position:absolute;
+  top: 15px;
+  left:95px;
+}
+
+.teamleaderprojectnameS{
+  position:absolute;
+  top: 45px;
+  left:230px;
+    font-size: 20px;
+}
+.teamleaderclientS{
+    position:absolute;
+  top: 15px;
+  left:170px;
+  font-size: 20px;
+}
+.teamleaderdeliveredS{
+       position:absolute;
+  top: 75px;
+  left:95px;
+  font-size: 20px;
+  color:green;
+}
+.teamleaderprojectdiv{
+   position:relative;
+   margin-bottom: 10px;
+    width: 100%;
+    word-wrap:break-word;
+    line-height: 1.75;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.6);
+    
+}
+.teamleaderdescdesc{
+    padding: 10px;
+}
+.teamleaderRefuse ,.teamleaderAccept, .teamleaderAddtrainee, .teamleaderEvaluatetrainee , .teamleaderleaveproject{
+    position:relative;
+    right: 0;
+    margin-left: 20px;
+    border: solid 5px #188c90;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 5%;
+}
+
+.teamleaderaddtrainee ,.Evaluate{
+    float: right;
+    margin-right:50px;
+    background-color:rgba(0,0,0,0.6);
+    border-radius:5%;
+    border: 4px solid #188c90;
+    color:#188c90 ;
+}
+.evaluationdiv{
+    width:100%;
+    height:380px;
+   background-color:rgba(0,0,0,0.5);
+}
+
+.EvaluateText{
+    margin-bottom: 10px;
+    width: 80%;
+    height: 250px;
+    font-size: 24px;
+    background-color:rgba(0,0,0,0.5);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: lightblue;
+    resize:none;
+    overflow:hidden; 
+    display: block;
+    position: absolute;
+    top: 5%;
+    left:10%;
+}
+.EvaluateBTN, .Backtoteamleadercurrentprojectfromevaluation, .teamleaderRemoveMT{
+      width:20%;
+    height: 50px;
+    position:absolute;
+    top:300px;
+    left:14%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.4);
+    border-color: transparent transparent #188c90 transparent;
+    border-bottom: 5px solid ;
+    text-decoration: none;
+    padding-top: 10px;
+    text-align:center;
+}
+.teamleaderRemoveMT{
+    position:absolute;
+    left:36%;
+}
+.Backtoteamleadercurrentprojectfromevaluation{
+    position:absolute;
+    left:58%;
+}
+ 
+/*Welcome Layout ---------------------------------------------------------------------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------------------------------------------------------*/
+.WelcomeLayoutContent{
+    height:100%;
+    width: 100%;
+
+}
+.WelcomeHeaderDiv{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    text-align:center;
+    background-color: rgba(0,0,0,0.8);
+    font-family: "Brush Script MT", cursive;
+
+    font-size: 450%;
+  color: #188c90;
+ 
+  
+  
+}
+.WelcomeDiv{
+    width:70%;
+    height:75%;
+    position:absolute;
+    top: 12.5%;
+    left: 15%;
+    background-color: rgba(0,0,0,0.6);
+    text-align:center;
+}
+.WelcomeSpan{
+ font-family: "Brush Script MT", cursive;
+ color: lightblue;
+    font-size :250px;
+    text-align: center;
+}
+.WelcomeP{
+    font-size: 24px;
+    color: lightblue;
+    
+}
+.Login , .Register{
+    position:absolute;
+    top: 80%;
+    left: 25%;
+    width: 20%;
+    height: 8%;
+    color: #188c90;
+    background-color: rgba(0,0,0,0.5);
+    border-bottom: 5px solid #188c90;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 0.5%;
+    font-size: 24px;
+
+}
+.Register{
+    position:absolute;
+    left: 50%;
+}
+.Login:hover , .Register:hover{
+    color: lightblue;
+    background-color: rgba(0,0,0,0.9);
+    border-bottom: 5px solid lightblue;
+}
+
+.loginBG {
+    background: url('../images/login-BG.jpg');
+   
+}
