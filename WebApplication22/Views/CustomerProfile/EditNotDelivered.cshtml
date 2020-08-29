@@ -1,0 +1,27 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+@{
+    ViewBag.Title = "EditNotDelivered";
+    Layout = "~/Views/Shared/_CustomerProfile.cshtml";
+    var Head = "";
+    var projectname = "";
+    foreach (var i in Model)
+    {
+        Head = i.p.describtion;
+        projectname = i.p.projectname;
+
+    }
+}
+
+
+<div class="divallinCustomerProfile">
+   
+    <form class="EditNotDeliveredform" method="post">
+        <textarea class="EditNotDeliveredDescription" placeholder="Description" name="describtion"  required>@Head</textarea>
+        
+        <input type="text" class="EditNotDeliveredsuggestMD" name="projectname" value="@projectname" placeholder="Project Name" required>
+          
+        <input type="submit" class="EditNotDeliveredSubmit " value="Post" />
+        @Html.ActionLink("Back to Not delivered Projects", "CustomerProfile", "CustomerProfile", null, new { @class = "CustomerBacktoNotDeliveredFromEdit" })
+    </form>
+   
+</div>

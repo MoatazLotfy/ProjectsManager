@@ -1,0 +1,35 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+
+@{
+    ViewBag.Title = "MTCurrentProjects";
+    Layout = "~/Views/Shared/_CustomerProfile.cshtml";
+}
+<div class="divallinCustomerProfile">
+    <div class="CustomerOptions">
+        @Html.ActionLink("Requests", "MTRequests", "CustomerProfile", new { data = TempData["status"] }, new { @class = "MTRequests" })
+        @Html.ActionLink("Current Projects", "MTCurrentProjects", "CustomerProfile", null, new { @class = "MTCurrentProjects active" })
+        @Html.ActionLink("Qulifications", "MTQualifications", "CustomerProfile", null, new { @class = "MTQualifications" })
+        @Html.ActionLink("History", "MTHistory", "CustomerProfile", null, new { @class = "MTHistory" })
+        </div>
+        <div class="MTCurrentProjectsTable">
+
+
+            @foreach (var u in Model)
+            {
+                <div class="homeprojectdiv">
+                    @Reuseable.Posts("../../userimages/"+@u.u.photo, @u.p.projectname,@u.u.firstname, @u.p.describtion)
+                    @Html.ActionLink("Leave project ", "Leave", new { id = u.p.projectid })
+
+                </div>
+
+
+
+
+
+            }
+
+
+        </div>
+    </div>
+
+

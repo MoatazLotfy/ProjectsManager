@@ -1,0 +1,76 @@
+@model IEnumerable<WebApplication22.Models.viewmodel>
+@{
+    var headimagename = "";
+    var Headusername = "";
+    var fname = "";
+    var lname = "";
+    var email = "";
+    var phone = "";
+
+    foreach (var i in (List<WebApplication22.Models.viewmodel>)ViewData["info"])
+    {
+        headimagename = i.u.photo;
+        Headusername = i.u.firstname;
+        fname = i.u.firstname;
+        lname = i.u.lastname;
+        email = i.u.Email;
+        phone = i.u.phone;
+
+    }
+    var Headimage = "../../userimages/" + headimagename;
+   
+}
+<!doctype html>
+<html>
+<head>
+    <title>website</title>
+    @System.Web.Optimization.Styles.Render("~/css/css")
+
+    </head>
+    <body >
+        
+        <header>
+        <div class="site-name">Makers</div>
+            <img src=@Headimage class="Headimage">
+            @Html.ActionLink("Logout", "LoginView", "Welcome", null, new { @class = "Logout" })
+            <label class="Headusername">@Headusername</label>
+        </header>
+            <!-- S_nav-->
+        <nav class="navbar" >
+            <div class="container">
+                    <ul class="options top">
+                        <li>@Html.ActionLink("Home", "index", "Home", new { data = TempData["status"], id = TempData["id"] }, new { @class = "Home" })</li>
+                        <li>@Html.ActionLink("Profile", "CustomerProfile", "CustomerProfile", new { data = TempData["status"] ,id = TempData["id"]}, new { @class = "Profile active" })</li>
+                     
+                        
+                    </ul>
+                <div class="clearfix"></div>
+            </div>
+        </nav>
+        <div class="profiledivincustomer">
+            <img src="@Headimage" class="profileimage">
+            <p class="firstnameprofileinCustomer">FirstName</p>
+            <p class="lastnameprofileinCustomer">LastName</p>
+            <p class="EmailprofileinCustomer">E_mail</p>
+            <p class="phoneprofileinCustomer">Phone</p>
+            <input class="firstnameprofileDatainCustomer" value="@fname" disabled />
+            <input class="lastnameprofileDatainCustomer" value="@lname" disabled />
+            <input class="emailprofileDatainCustomer" value="@email" disabled />
+            <input class="phoneprofileDatainCustomer" value="@phone" disabled />
+        </div>
+        <div class="CustomerProfileLayoutContent">
+            @RenderBody()
+        </div>
+    <!-- E_nav --> 
+         <!--S-footer-->
+        <div>
+            <footer></footer>
+        </div>
+        <!--E-footer-->
+        
+       
+        @System.Web.Optimization.Scripts.Render("~/javascript/jquery")
+        @System.Web.Optimization.Scripts.Render("~/javascript/JavaScript")
+        
+    </body>
+</html>

@@ -1,0 +1,35 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+
+@{
+    ViewBag.Title = "DeliveredTable";
+    Layout = "~/Views/Shared/_CustomerProfile.cshtml";
+}
+<div class="divallinCustomerProfile">
+    <div class="CustomerOptions">
+        @Html.ActionLink("Not Delivered Projects", "CustomerProfile", "CustomerProfile", new { data = TempData["status"] }, new { @class = "NotDeliveredProjects" })
+        @Html.ActionLink("Delivered Projects", "DeliveredTable", "CustomerProfile", null, new { @class = "DeliveredProjects active" })
+        @Html.ActionLink("Post project", "ProfilePostProject", "CustomerProfile", null, new { @class = "ProfilePostProject" })
+        </div>
+        <div class="DeliveredTable">
+
+            @foreach (var i in Model)
+            {
+
+
+                <div class="homeprojectdiv">
+                    @Reuseable.Posts("../../userimages/" + @i.u.photo, @i.p.projectname, @i.u.firstname, @i.p.describtion)
+
+
+                </div>
+
+
+
+
+            }
+
+
+
+
+        </div>
+
+    </div>

@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "TeamLeaderQualifications";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+<div class="divallinMDProfile">
+    <div class="MDOptions">
+        @Html.ActionLink("Requests", "TeamLeaderRequests", "MDProfile", new { data = TempData["status"] }, new { @class = "teamleaderrequests" })
+        @Html.ActionLink("Current projects", "TeamleaderCurrent", "MDProfile", new { data = TempData["status"] }, new { @class = "teamleadercurrent" })
+        @Html.ActionLink("History", "TeamleaderHistory", "MDProfile", new { data = TempData["status"] }, new { @class = "teamleaderhistory active" })
+        @Html.ActionLink("Quilifications", "TeamLeaderQualifications", "MDProfile", new { data = TempData["status"] }, new { @class = "teamleaderquilifications" })
+    </div>
+
+    <div class="MDQualificationsDiv">
+        <input type="number" class="MDJava disabled" placeholder="Java" value="@ViewData["allprojects"]" disabled />
+        <input type="number" class="MDPython disabled" placeholder="Pyhton" value="@ViewData["finishprojects"]" disabled />
+        <input type="number" class="MDAsp disabled" placeholder="Asp" value="@ViewData["workingprojects"]" disabled />
+        <input type="number" class="MDPhp disabled" placeholder="Php" value="@ViewData["feedbacks"]" disabled />
+        <button class="MDEnableChart">Edit Qualifications</button>
+        <button class="MDShowChart">Show chart</button>
+        <div class="MDpiechartdiv"> <canvas id="MDPieChart"></canvas> </div>
+    </div>
+</div>

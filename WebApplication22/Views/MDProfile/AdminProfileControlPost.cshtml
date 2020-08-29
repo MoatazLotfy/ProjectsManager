@@ -1,0 +1,32 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+@{
+    ViewBag.Title = "AdminProfileControlPost";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+
+<div class="divallinMDProfile">
+    <div class="teamleaderDiv">
+
+        @foreach (var i in Model)
+        {
+            <div class="teamleaderprojectdiv">
+            @Reuseable.Posts("../../userimages/"+@i.u.photo, @i.p.projectname,@i.u.firstname, @i.p.describtion)
+
+            @Html.ActionLink("Control", "AdminControlPost", "MDProfile", new { pid = @i.p.projectid }, new { @class = "AdminProfileControlProject" })
+                </div>
+
+
+        }
+
+
+    </div>
+
+
+    <div class="MDOptions">
+        @Html.ActionLink("+", "AdminCreatePost", "MDProfile", null, new { @class = "AdminCreatePost" })
+        @Html.ActionLink("Control posts", "AdminProfileControlPost", "MDProfile", null, new { @class = "AdminControlPost active" })
+        @Html.ActionLink("Control users", "AdminControltrainee", "MDProfile", null, new { @class = "AdminControlUser" })
+
+        </div>
+    </div>
+

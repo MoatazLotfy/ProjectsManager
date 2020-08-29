@@ -1,0 +1,26 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+
+@{
+    ViewBag.Title = "AdminCreatePost";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+
+<div class="divallinMDProfile">
+    <form method="post" action="">
+        <textarea class="AdminCreateDescription" name="describtion" required></textarea>
+       <input type="text" name="projectname" placeholder="Projectname" class="adminprojectname" required/>
+        <span class="AdminCreateDescriptionS"> Description</span>  
+        <select  name="user" class="Adminselectuser">
+            @foreach (var x in (List<WebApplication22.Models.viewmodel>)ViewData["users"])
+            {
+                <option>@x.u.Email</option>
+            }
+
+        </select>
+        <input type="submit" class="AdminSubmitCreatePost" value="Create" />
+    </form>
+  
+    @Html.ActionLink("Back to projects table", "AdminProfileControlPost", "MDProfile", null, new { @class = "AdminBackToProjectsFromCreate" })
+</div>
+
+

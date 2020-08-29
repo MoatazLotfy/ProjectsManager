@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+@{
+    ViewBag.Title = "AdminControlPost";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+    
+    
+}
+
+
+
+<div class="divallinMDProfile">
+    <form action="" method="post">
+        @foreach(var i in Model)
+        {
+        <textarea class="AdminEditDescription" name="describtion" required>@i.p.describtion</textarea>
+        <span class="AdminEditDescriptionS"> Description</span>
+        <input type="text" required name="projectname" value="@i.p.projectname"/>
+        <input type="submit" class="AdminSaveEdit" value="Update" />
+        }
+        
+    </form>
+    @Html.ActionLink("Remove", "Removep", null, new { @class = "AdminRemovePost" })
+    @Html.ActionLink("Back to projects table", "AdminProfileControlPost", "MDProfile", null, new { @class = "AdminBackToProjectsFromControl" })
+</div>

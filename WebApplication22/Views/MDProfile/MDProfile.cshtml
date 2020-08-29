@@ -1,0 +1,38 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+@{
+    ViewBag.Title = "MDProfile";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+
+<div class="divallinMDProfile">
+   
+    <div class="MDOptions">
+        @Html.ActionLink("Managed Projects", "MDProfile", "MDProfile", new { data = TempData["status"] }, new { @class = "MDManagedProjects active" })
+        @Html.ActionLink("history", "MDHistory", "MDProfile", null, new { @class = "MDhistory" })
+        @Html.ActionLink("Qualifications", "MDQualifications", "MDProfile", null, new { @class = "MDQualifications" })
+        @Html.ActionLink("LeavingRequests", "MDLeavingRequests", "MDProfile", null, new { @class = "MDLeavingRequests " })
+        </div>
+
+        <div class="teamleaderDiv">
+
+
+            @foreach (var i in Model)
+            {
+                <div class="teamleaderprojectdiv">
+                    @Reuseable.Posts("../../userimages/"+@i.u.photo, @i.p.projectname,@i.u.firstname,@i.p.describtion)
+                    @Html.ActionLink("Add Teamleader", "MDAddTeamleader", "MDProfile", new { pid = @i.p.projectid }, new { @class = "MDAddTeamleader" })
+                    @Html.ActionLink("Add trainee", "MDAddTrainee", "MDProfile", new { pid = @i.p.projectid }, new { @class = "MDAddTrainee" })
+                    @Html.ActionLink("Control project", "MDControlProject", "MDProfile", new { pid = @i.p.projectid }, new { @class = "MDControlProject" })
+                   
+
+                </div>
+
+
+            }
+
+
+
+        </div>
+
+
+    </div>

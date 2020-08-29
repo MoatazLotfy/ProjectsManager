@@ -1,0 +1,53 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+
+@{
+    ViewBag.Title = "CustomerProfile";
+    Layout = "~/Views/Shared/_CustomerProfile.cshtml";
+}
+
+
+<div class="divallinCustomerProfile">
+    
+   @if (TempData["status"] != null && TempData["status"].Equals("Client"))
+    {
+      <div class="CustomerOptions">
+   @Html.ActionLink("Not Delivered Projects", "CustomerProfile", "CustomerProfile", new { data = TempData["status"] }, new { @class = "NotDeliveredProjects active" })
+@Html.ActionLink("Delivered Projects", "DeliveredTable", "CustomerProfile", null, new { @class = "DeliveredProjects" })
+@Html.ActionLink("Post project", "ProfilePostProject", "CustomerProfile", null, new { @class = "ProfilePostProject" })
+    
+   </div>
+    <div class="NotDeliveredTable">
+
+       
+            @foreach (var i in Model)
+            {
+                 
+                 
+                    <div class="homeprojectdiv">
+                        @Reuseable.Posts("../../userimages/" + @i.u.photo, @i.p.projectname, @i.u.firstname, @i.p.describtion)
+                        @Html.ActionLink("Edit", "EditNotDelivered", new { id = @i.p.projectid }, new { @class = "EdittableprojectinCustomer" })
+                        @Html.ActionLink("Remove", "Deleteproject", new { id = @i.p.projectid }, new { @class = "RemovetableprojectinCustomer" })
+                        @Html.ActionLink("MD Requests", "CustomerRequests", new { id = @i.p.projectid }, new { @class = "RemovetableprojectinCustomer" })
+
+                    </div>
+                    
+               
+                
+
+            }
+        
+
+
+    </div>
+   }
+   @if (TempData["status"] != null && TempData["status"].Equals("Trainee"))
+{ 
+     @Html.ActionLink("Requests", "CustomerProfile", "CustomerProfile", new { data = TempData["status"] }, new { @class = "MTRequests active" })
+     @Html.ActionLink("Current Projects", "MTCurrentProjects", "CustomerProfile", null, new { @class = "MTCurrentProjects" })
+     @Html.ActionLink("Qulifications", "MTQualifications", "CustomerProfile", null, new { @class = "MTQualifications" })
+     @Html.ActionLink("History", "MTHistory", "CustomerProfile", null, new { @class = "MTHistory" })
+
+   }
+
+</div>
+

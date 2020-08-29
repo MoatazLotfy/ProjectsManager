@@ -1,0 +1,35 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+
+@{
+    ViewBag.Title = "AdminControlcustomer";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+
+<div class="divallinMDProfile">
+    <div class="teamleaderDiv">
+
+        @foreach (var i in Model)
+        {
+            <div class="teamleaderprojectdiv">
+
+                <span>Email:    </span> <span>@i.u.Email </span> @Html.ActionLink("Remove", "controlluser", new { id = i.u.userid }, new { @class = "AdminRemoveCustomer" })<br />
+                <span>Name:   </span> <span>@i.u.firstname</span>
+            </div>
+
+
+        }
+
+
+
+    </div>
+
+    <<div class="MDOptions">
+    @Html.ActionLink("+", "AdminAdduser", "MDProfile", null, new { @class = "AdminCreateUser" })
+    @Html.ActionLink("Control trainee", "AdminControltrainee", "MDProfile", null, new { @class = "AdminControltrainee" })
+    @Html.ActionLink("Control customer", "AdminControlcustomer", "MDProfile", null, new { @class = "AdminControlCustomer active" })
+    @Html.ActionLink("Control team leader", "AdminControlteamleader", "MDProfile", null, new { @class = "AdminControlTeamLeader" })
+    @Html.ActionLink("Control marketing director", "AdminControlMD", "MDProfile", null, new { @class = "AdminControlMD" })
+    @Html.ActionLink("Back to projects table", "AdminProfileControlPost", "MDProfile", null, new { @class = "AdminBackToProjectsFromControlUser" })
+    </div>
+</div>
+

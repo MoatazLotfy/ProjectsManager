@@ -1,0 +1,30 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+
+@{
+    ViewBag.Title = "CustomerRequests";
+    Layout = "~/Views/Shared/_CustomerProfile.cshtml";
+}
+<div class="CustomerOptions">
+    @Html.ActionLink("Not Delivered Projects", "CustomerProfile", "CustomerProfile", new { data = TempData["status"] }, new { @class = "NotDeliveredProjects active" })
+    @Html.ActionLink("Delivered Projects", "DeliveredTable", "CustomerProfile", null, new { @class = "DeliveredProjects " })
+    @Html.ActionLink("Post project", "ProfilePostProject", "CustomerProfile", null, new { @class = "ProfilePostProject" })
+</div>
+<div class="DeliveredTable">
+    @foreach (var x in Model)
+    {
+        <div class="homeprojectdiv">
+            <span>MD Email : @x.u.Email </span><br />
+            <span>Start date : @x.d.startdate </span>@Html.ActionLink("Accept", "Accept", new {drid=@x.d.id }, new { @class = "EdittableprojectinCustomer" })<br />
+            <span>end date : @x.d.enddate </span>@Html.ActionLink("Refuse", "Refuse", new { drid = @x.d.id }, new { @class = "RemovetableprojectinCustomer" })<br />
+            <span>Price : @x.d.price </span><br />
+           
+           
+           
+
+        </div>
+    }
+
+</div>
+
+
+

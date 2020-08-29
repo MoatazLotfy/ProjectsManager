@@ -1,0 +1,33 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+
+@{
+    ViewBag.Title = "MDDeleteMember";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+
+
+}
+
+<div class="teamleaderDiv">
+
+
+
+
+    @foreach (var j in Model)
+    {
+        <div class="teamleaderprojectdiv">
+
+            <span>@j.u.Email</span> @Html.ActionLink("Delete", "Dmember", new { id = @j.u.userid }, new { @class = "Dmember" })<br />
+            <span>@j.u.status</span>
+        </div>
+    }
+
+
+
+</div>
+
+
+
+<div class="MDOptions">
+    @Html.ActionLink("Back to Control Projects", "MDControlProject", "MDProfile", null, new { @class = "Backtocurrentproject" })
+
+</div>

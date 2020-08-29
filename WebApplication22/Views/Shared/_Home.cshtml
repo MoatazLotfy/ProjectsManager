@@ -1,0 +1,80 @@
+@{
+    var headimagename =ViewData["userphoto"];
+    var Headimage = "../../userimages/"+ headimagename;
+    var Headusername = TempData["name"];
+}
+<!doctype html>
+<html>
+<head>
+    
+    <title>website</title>
+    @System.Web.Optimization.Styles.Render("~/css/css")
+  <!--  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />-->
+    </head>
+    <body >
+        
+        <div >
+        </div>
+        <header>
+           
+            <img src=@Headimage class="Headimage">
+            @Html.ActionLink("Logout", "LoginView", "Welcome", null, new { @class = "Logout" })
+            <label class="Headusername">@Headusername</label>
+        <div class="site-name">Makers</div>
+           
+       
+        </header>
+
+    <!-- S_nav-->
+        <nav class="navbar" >
+            <div class="container">
+               
+                    <ul class="options right">
+                        <li>@Html.ActionLink("Home", "index", "Home", new { data = TempData["status"], id = TempData["id"] }, new { @class = "Home active" })</li>
+                   
+                        @if (TempData["status"].Equals("Client") )
+                        { 
+                        <li>@Html.ActionLink("Profile", "CustomerProfile", "CustomerProfile", new { data = TempData["status"], id = TempData["id"] }, new { @class = "Profile " })</li>
+                        }
+                        @if (TempData["status"].Equals("Trainee"))
+                        {
+                            <li>@Html.ActionLink("Profile", "MTRequests", "CustomerProfile", new { data = TempData["status"], id = TempData["id"] }, new { @class = "Profile " })</li>
+                        }
+
+                        @if (TempData["status"].Equals("Marketing Director"))
+                        {
+                        <li>@Html.ActionLink("Profile", "MDProfile", "MDProfile", new { data = TempData["status"] }, new { @class = "Profile" })</li>
+                        }
+                        @if (TempData["status"].Equals("Admin"))
+                        {
+                         <li>@Html.ActionLink("Profile", "AdminProfileControlPost", "MDProfile", new { data = TempData["status"] }, new { @class = "Profile" })</li>
+                            
+                        }
+                        @if (TempData["status"].Equals("Marketing team leader"))
+                        {
+                            <li>@Html.ActionLink("Profile", "TeamleaderCurrent", "MDProfile", new { data = TempData["status"] }, new { @class = "Profile" })</li>
+                        }
+                      
+                    </ul>
+                <div class="clearfix"></div>
+            </div>
+        </nav>
+        <div class="HomeLayoutContent">
+            @RenderBody()
+
+           
+        </div>
+      <!-- E_nav --> 
+      <!--S-footer-->
+
+        <div>
+            <footer>Copy rights belongs to Makers team </footer>
+        </div>
+        <!--E-footer-->
+        <!-- pop up-->
+
+        @System.Web.Optimization.Scripts.Render("~/javascript/jquery")
+     @System.Web.Optimization.Scripts.Render("~/javascript/JavaScript")    
+    </body>
+</html>

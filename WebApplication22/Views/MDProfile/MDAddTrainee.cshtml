@@ -1,0 +1,37 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+
+@{
+    ViewBag.Title = "MDAddTrainee";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+<div class="MDOptions">
+   
+    @Html.ActionLink("Back to Current Projects", "MDProfile", "MDProfile", null, new { @class = "Backtocurrentproject" })
+</div>
+
+<div class="teamleaderDiv">
+
+    <form method="post" action="">
+        @foreach (var i in Model)
+        {
+
+            <div class="teamleaderprojectdiv">
+
+
+                <span>@i.u.Email</span> <input type="checkbox" class="traineecheckbox" name="train" value="@i.u.Email" />
+
+
+            </div>
+
+
+        }
+        <div>
+            <input type="submit" value="Request" class="submitteamleader" />
+        </div>
+        
+</form>
+
+  
+</div>
+
+

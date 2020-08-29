@@ -1,0 +1,32 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+
+@{
+    ViewBag.Title = "MDProjectDescription";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+    var dis = "";
+    var stat = "";
+    var name = "";
+    foreach(var i in Model)
+    {
+        dis = @i.p.describtion;
+        stat = @i.p.status;
+        name = @i.p.projectname;
+        
+    }
+}
+
+
+
+<div class="divallinMDProfile">
+    <span class="MDDescriptionS">Description</span>
+    <span class="MDScheduleS">Name</span>
+    <span class="MDPriceS">Price</span>
+    <span class="MDStatusS">Status</span>
+
+    <label class="MDDescriptionL">@dis</label>
+    <label class="MDScheduleL" >@name</label>
+     <label class="MDPriceL" >Price</label>
+    <label class="MDStatusL" >@stat</label>
+
+        @Html.ActionLink("Back to Current Projects", "MDProfile", "MDProfile", null, new { @class = "BacktocurrentprojectFromDescription" })
+</div>

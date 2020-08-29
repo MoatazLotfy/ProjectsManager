@@ -1,0 +1,90 @@
+@model IEnumerable<WebApplication22.Models.viewmodel>
+@{
+    var headimagename = "";
+    var Headusername = "";
+    var fname = "";
+    var lname = "";
+    var email = "";
+    var phone = "";
+    var check = Session["status"].ToString();
+    foreach (var i in (List<WebApplication22.Models.viewmodel>)ViewData["mdinfo"])
+    {
+        headimagename = i.u.photo;
+        Headusername = i.u.firstname;
+        fname = i.u.firstname;
+        lname = i.u.lastname;
+        email = i.u.Email;
+        phone = i.u.phone;
+
+    }
+    var Headimage = "../../userimages/" + headimagename;
+
+}
+<!doctype html>
+<html>
+<head>
+    <title>website</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+</head>
+<body>
+
+    <header>
+        
+        <img src=@Headimage class="Headimage">
+        @Html.ActionLink("Logout", "LoginView", "Welcome", null, new { @class = "Logout" })
+        <label class="Headusername">@Headusername</label>
+        <div class="site-name">Makers</div>
+
+
+    </header>
+
+    <!-- S_nav-->
+    <nav class="navbar">
+        <div class="container">
+
+            <ul class="options left">
+                <li>@Html.ActionLink("Home", "index", "Home", new { data = TempData["status"] }, new { @class = "Home" })</li>
+                @if (check.Equals("Marketing Director"))
+                {
+                    <li>@Html.ActionLink("Profile", "MDProfile", "MDProfile", new { data = TempData["status"] }, new { @class = "Profile active" })</li>
+                }
+                @if (check.Equals("Admin"))
+                {
+                    <li>@Html.ActionLink("Profile", "AdminProfileControlPost", "MDProfile", new { data = TempData["status"] }, new { @class = "Profile active" })</li>
+
+                }
+                @if (check.Equals("Marketing team leader"))
+                {
+                    <li>@Html.ActionLink("Profile", "TeamleaderCurrent", "MDProfile", new { data = TempData["status"] }, new { @class = "Profile active" })</li>
+                }
+               
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </nav>
+    <div class="profiledivinMD">
+        <img src="@Headimage" class="MDProfileImage">
+        <p class="firstnameprofileinMD">FirstName</p>
+        <p class="lastnameprofileinMD">LastName</p>
+        <p class="EmailprofileinMD">Email</p>
+        <p class="phoneprofileinMD">Phone</p>
+        <p class="jobprofileinMD">Director</p>
+        <input class="firstnameprofileDatainMD" value="@fname" disabled />
+        <input class="lastnameprofileDatainMD" value="@lname" disabled />
+        <input class="emailprofileDatainMD" value="@email" disabled />
+        <input class="phoneprofileDatainMD" value="@phone" disabled />
+
+    </div>
+    <div class="MDProfileContent">
+        @RenderBody()
+    </div>
+    <!-- E_nav -->
+
+
+
+    <script src="../javascript/jquery-3.1.1.min.js"></script>
+    <script src="../javascript/JavaScript.js"></script>
+    <script src="../javascript/Chart.bundle.js"></script>
+</body>
+</html>

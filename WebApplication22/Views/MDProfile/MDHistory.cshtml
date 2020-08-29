@@ -1,0 +1,34 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+@{
+    ViewBag.Title = "MDHistory";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+
+<div class="divallinMDProfile">
+    <div class="MDOptions">
+        @Html.ActionLink("Managed Projects", "MDProfile", "MDProfile", new { data = TempData["status"] }, new { @class = "MDManagedProjects " })
+        @Html.ActionLink("history", "MDHistory", "MDProfile", null, new { @class = "MDhistory active" })
+        @Html.ActionLink("Qualifications", "MDQualifications", "MDProfile", null, new { @class = "MDQualifications" })
+        @Html.ActionLink("Back to Current Projects", "MDProfile", "MDProfile", null, new { @class = "BacktocurrentprojectFromHistory" })
+       </div>
+    <div class="teamleaderDiv">
+
+
+        @foreach (var i in Model)
+        {
+            <div class="teamleaderprojectdiv">
+                @Reuseable.Posts("../../userimages/"+@i.u.photo, @i.p.projectname,@i.u.firstname, "description")
+                <label>@i.p.status</label>
+            </div>
+           
+
+        }
+        
+
+
+    </div>
+
+        
+
+    </div>
+

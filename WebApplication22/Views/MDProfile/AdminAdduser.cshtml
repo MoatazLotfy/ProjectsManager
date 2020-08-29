@@ -1,0 +1,33 @@
+﻿@model WebApplication22.Models.user
+@{
+    ViewBag.Title = "AdminAdduser";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+
+<div class="divallinMDProfile">
+    @{
+        using (Html.BeginForm("AdminAdduser", "MDProfile", FormMethod.Post, new {enctype="multipart/form-data"}))
+        { 
+    <p class="AdminCreateuserFnameP">FirstName</p>
+    <p class="AdminCreateuserLnameP">LastName</p>
+    <p class="AdminCreateuserEmailP">Email</p>
+    <p class="AdminCreateuserPhoneP">Phone</p>
+    <p class="">Password</p>
+
+    <input type="text" class="AdminCreateuserFname" name="firstname" required pattern="[a-zA-Z]+" />
+    <input type="text" class="AdminCreateuserLname" name="lastname" required pattern="[a-zA-Z]+" />
+    <input type="email" class="AdminCreateuserEmail" name="Email" required/>
+    <input type="text" class="AdminCreateuserPhone" name="phone" required pattern="[0-9]+{11}" />
+    <input type="password" class="" name="password" required pattern="[a-zA-Z0-9!%&]+{6,14}" />
+                                   <select name="status">
+                                       <option>Client</option>
+                                       <option>Marketing Director</option>
+                                       <option>Marketing team leader</option>
+                                       <option>Trainee</option>
+                                   </select>
+                                   <input type="file" id="photo" name="photo" class="profilephoto" accept="image/x-png,img/gif,img/jpeg" required /><br>
+
+    <input type="submit" class="AdminCreateSubmit" />
+    }
+    }
+</div>

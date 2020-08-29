@@ -1,0 +1,139 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+
+@{
+    ViewBag.Title = "index";
+    Layout = "~/Views/Shared/_Home.cshtml";
+    var check = Session["status"].ToString();
+
+}
+@{
+    var S = TempData["status"];
+}
+
+<div class="indexdiv">
+    <!-- form -->
+    @if (TempData["status"] != null && !TempData["status"].Equals("Client"))
+    {
+        <div class="CreateProject">
+            <h2 class="CreateProjectLabel">Create project</h2>
+            <form class="CreateProjectForm">
+                <input type="text" class="projectname disabled" placeholder="projectname" disabled />
+                <textarea class="description disabled" placeholder="Description" disabled></textarea>
+
+                <input type="submit" class="SubmitProject disabled" value="Post" disabled />
+
+            </form>
+
+        </div>
+    }
+    @if (TempData["status"] != null && TempData["status"].Equals("Client"))
+    {
+        <div class="CreateProject">
+            <h2 class="CreateProjectLabel">Create project</h2>
+            <form class="CreateProjectForm" method="post">
+                <input type="text" class="projectname" name="projectname" placeholder="ProjectName" required />
+                <textarea class="description" name="describtion" placeholder="Description" required></textarea>
+
+                <input type="submit" class="SubmitProject" value="Post" />
+
+
+            </form>
+        </div>
+    }
+    <!-- E-form -->
+    <!-- project -->
+    <div class="CurrentProject">
+
+
+
+        <div class="scrolldiv">
+
+            @foreach (var i in Model)
+            {
+
+                <div class="indexpostsdiv">
+
+
+                    <div class="homeprojectdiv">
+                        @Reuseable.Posts("../../userimages/" + @i.u.photo, @i.p.projectname, @i.u.firstname, @i.p.describtion)
+                        @if(check.Equals("Marketing Director"))
+                        {
+                            <div class="Customesigncontrol">
+                               <p class="SignProjectP">Sign project</p>  
+                                <span class="signStartdateS" >Start Date</span><span class="signEnddateS">End Date</span>
+                                <form action="@Url.Action("Mdsign","Home")" method="post">
+                                    <select class="MDsignstartday" name="startday">
+                                        @for (var d = 1; d < 31; d++)
+                                        {
+
+                                            <option>@d</option>
+
+
+                                        }
+                                    </select>
+                                    <select class="MDsignstartmonth" name="startmonth">
+                                        @for (var d = 1; d < 13; d++)
+                                        {
+
+                                            <option>@d</option>
+
+
+                                        }
+                                    </select>
+                                    <select class="MDsignstartyears" name="startyear">
+                                        @for (var d = 2017; d < 2021; d++)
+                                        {
+
+                                            <option>@d</option>
+
+
+                                        }
+                                    </select>
+                                    <select class="MDsignendday" name="endday">
+                                        @for (var d = 1; d < 31; d++)
+                                        {
+                                            <option>@d</option>
+
+
+                                        }
+                                    </select>
+                                    <select class="MDsignendmonth" name="endmonth">
+                                        @for (var d = 1; d < 13; d++)
+                                        {
+                                            <option>@d</option>
+
+                                        }
+                                    </select>
+                                    <select class="MDsignendyears" name="endyear">
+                                        @for (var d = 2017; d < 2021; d++)
+                                        {
+                                            <option>@d</option>
+
+
+                                        }
+                                    </select>
+                                    <input type="text" class="MDsignPriceT" name="price" placeholder="Price" />
+                                    <input type="submit" value="@i.p.projectid" name="id" class="mdsubmitpro"/>
+                                </form>
+                            </div>
+                        }
+                        
+                    </div>
+
+                </div>
+
+
+            }
+
+
+
+
+        </div>
+
+    </div>
+
+    <!--end-->
+    <!-- E- project -->
+
+
+</div>

@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "MDQualifications";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+<div class="divallinMDProfile">
+    <div class="MDOptions">
+        @Html.ActionLink("Managed Projects", "MDProfile", "MDProfile", new { data = TempData["status"] }, new { @class = "MDManagedProjects " })
+        @Html.ActionLink("history", "MDHistory", "MDProfile", null, new { @class = "MDhistory " })
+        @Html.ActionLink("Qualifications", "MDQualifications", "MDProfile", null, new { @class = "MDQualifications active" })
+        @Html.ActionLink("LeavingRequests", "MDLeavingRequests", "MDProfile", null, new { @class = "MDLeavingRequests " })
+        </div>
+         <div class="MDQualificationsDiv">
+             <input type="number" class="MDJava disabled" value="@ViewData["allprojects"]" placeholder="Java" disabled />
+             <input type="number" class="MDPython disabled" value="@ViewData["finishprojects"]" placeholder="Pyhton" disabled />
+             <input type="number" class="MDAsp disabled" value="@ViewData["workingprojects"]" placeholder="Asp" disabled />
+             <input type="number" class="MDPhp disabled" placeholder="Php" value="@ViewData["feedbacks"]" disabled />
+            <button class="MDEnableChart">Edit Qualifications</button>
+            <button class="MDShowChart">Show chart</button>
+            <div class="MDpiechartdiv"> <canvas id="MDPieChart"></canvas> </div>
+        </div>
+
+    </div>

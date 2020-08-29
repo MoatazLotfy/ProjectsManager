@@ -1,0 +1,29 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>website</title>
+    @System.Web.Optimization.Styles.Render("~/css/css")
+    <!--  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+      <link rel="stylesheet" href="../css/normalize.css" />-->
+
+</head>
+<body>
+  
+    <div class="WelcomeDiv">
+        <span class="WelcomeSpan">Makers</span>
+        <p class="WelcomeP">Achieve your dream ,Let your project shine</p>
+        @Html.ActionLink("Login", "LoginView", "Welcome", null, new { @class = "Login" })
+        @Html.ActionLink("Sign Up", "register", "Welcome", null, new { @class = "Register" })
+    </div>
+
+    <div class="WelcomLayoutContent">
+        @RenderBody()
+    </div>
+    @System.Web.Optimization.Scripts.Render("~/javascript/jquery")
+    @System.Web.Optimization.Scripts.Render("~/javascript/JavaScript")
+    
+</body>
+</html>

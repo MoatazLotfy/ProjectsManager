@@ -1,0 +1,32 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+
+@{
+    ViewBag.Title = "MDAddTeamleader";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+
+<div class="divallinMDProfile">
+    <div class="teamleaderDiv">
+
+        
+            @foreach (var i in Model)
+            {
+
+                <div class="teamleaderprojectdiv">
+
+                  
+                   <span>@i.u.Email</span> @Html.ActionLink("Request", "RLeader", "MDProfile", new { email = @i.u.Email }, new { @class = "submitteamleader" })
+
+
+                </div>
+               
+
+            }
+    
+
+
+    </div>
+    <div class="MDOptions">
+        @Html.ActionLink("Back to Current Projects", "MDProfile", "MDProfile", null, new { @class = "Backtocurrentproject" })
+        </div>
+    </div>

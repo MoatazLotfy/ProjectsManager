@@ -1,0 +1,18 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+@{
+    ViewBag.Title = "ProfilePostProject";
+    Layout = "~/Views/Shared/_CustomerProfile.cshtml";
+}
+<div class="divallinCustomerProfile">
+    <div class="CustomerOptions">
+        @Html.ActionLink("Not Delivered Projects", "CustomerProfile", "CustomerProfile", new { data = TempData["status"] }, new { @class = "NotDeliveredProjects" })
+        @Html.ActionLink("Delivered Projects", "DeliveredTable", "CustomerProfile", null, new { @class = "DeliveredProjects" })
+        @Html.ActionLink("Post project", "ProfilePostProject", "CustomerProfile", null, new { @class = "ProfilePostProject active" })
+        </div>
+        <form class="ProfileCreateProjectForm" method="post">
+            <textarea class="ProfilePostdescription " name="describtion" placeholder="Description" required ></textarea>
+            <input type="text" class="ProfilePostprice " name="projectname" placeholder="ProjectName"required />
+            <input type="submit" class="ProfilePostSubmitProject " value="Post" />
+
+        </form>
+    </div>

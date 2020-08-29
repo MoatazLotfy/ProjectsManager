@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "TeamLeaderEvaluation";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+
+<div class="divallinMDProfile">
+    
+        <button class="Backtoteamleadercurrentprojectfromevaluation">Back to current project</button>
+    
+    <div class="evaluationdiv">
+        <form action=""method="post">
+            <textarea class="EvaluateText" name="describtion"></textarea>
+            <input type="submit" value="Evaluate"  class="EvaluateBTN" /> 
+        </form>
+        @Html.ActionLink("Remove trainee", "RemoveTrainee", null, new { @class = "teamleaderRemoveMT" });
+    </div>
+
+</div>

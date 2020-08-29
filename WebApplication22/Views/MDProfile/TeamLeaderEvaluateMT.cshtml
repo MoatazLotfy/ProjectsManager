@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+@{
+    ViewBag.Title = "TeamLeaderEvaluateMT";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+
+<div class="divallinMDProfile">
+<div class="MDOptions">
+    @Html.ActionLink("Back to current project", "TeamleaderCurrent", "MDProfile", new { data = TempData["status"] }, new { @class = "Backtoteamleadercurrentproject " })
+   
+</div>
+<div class="teamleaderDiv">
+    @foreach (var x in Model)
+    {
+        <div class="teamleaderprojectdiv">
+            
+            <span>@x.u.Email</span>@Html.ActionLink("Evaluate", "TeamleaderEvaluation", "MDProfile", new {tid =@x.u.userid}, new { @class = "Evaluate " })
+
+        </div>
+
+    }
+
+</div>
+    </div>

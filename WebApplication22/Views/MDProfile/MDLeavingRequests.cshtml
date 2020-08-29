@@ -1,0 +1,27 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+@{
+    ViewBag.Title = "MDLeavingRequests";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+
+<div class="divallinMDProfile">
+    <div class="MDOptions">
+        @Html.ActionLink("Managed Projects", "MDProfile", "MDProfile", new { data = TempData["status"] }, new { @class = "MDManagedProjects " })
+        @Html.ActionLink("history", "MDHistory", "MDProfile", null, new { @class = "MDhistory " })
+        @Html.ActionLink("Qualifications", "MDQualifications", "MDProfile", null, new { @class = "MDQualifications" })
+        @Html.ActionLink("LeavingRequests", "MDLeavingRequests", "MDProfile", null, new { @class = "MDLeavingRequests active" })
+    </div>
+    <div class="teamleaderDiv">
+        @foreach (var x in Model)
+        {
+            <div class="teamleaderprojectdiv">
+                @Reuseable.Posts("../../userimages/"+@x.u.photo,@x.p.projectname, @x.u.firstname,@x.p.describtion)
+                <span>Leaving member:  </span><label class="Leavingmember">@x.u.Email</label><br />
+                @Html.ActionLink("Accept", "AcceptLeaving", new { reid=@x.r.id }, new { @class = "MDAcceptLeaving" })
+                @Html.ActionLink("Refuse", "RefuseLeaving", new { reid = @x.r.id }, new { @class = "MDRefuseLeaving" })
+
+            </div>
+        }
+    </div>
+</div>
+

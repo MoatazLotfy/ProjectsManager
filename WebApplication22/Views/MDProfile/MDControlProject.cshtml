@@ -1,0 +1,125 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+@{
+    ViewBag.Title = "MDControlProject";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+    var price="";
+    var  start = new []{"","",""};
+    var end = new [] {"","",""};
+    var status = "";
+    char[] delimiterChars = {'/'};
+    foreach(var x in Model)
+    {
+        String j = x.p.startdate.ToString();
+        start = j.Split(delimiterChars);
+        String jj = x.p.enddate.ToString();
+        end = jj.Split(delimiterChars);
+        price = x.p.price.ToString();
+        status = x.p.status;
+        
+        
+    }
+}
+
+<div class="divallinMDProfile">
+    <div class="MDControlProfilediv">
+        
+        <span class="MDSetPriceS">Set price</span>
+        <span class="MDstartS">from</span>
+        <span class="MDendS">to</span>
+        <form action="" method="post">
+            <select class="MDcontrolstartday" name="startday">
+                @for (var d = 18; d < 31; d++)
+                {
+                    if (start[0].Equals(d.ToString()))
+                    {
+                        <option selected="selected">@d</option>
+                    }
+                    else
+                    {
+                        <option>@d</option>
+
+                    }
+                }
+            </select>
+            <select class="MDcontrolstartmonth" name="startmonth">
+                @for (var d = 5; d < 13; d++)
+                {
+                    if (start[1].Equals(d.ToString()))
+                    {
+                        <option selected="selected">@d</option>
+                    }
+                    else
+                    {
+                        <option>@d</option>
+
+                    }
+                }
+            </select>
+            <select class="MDcontrolstartyears" name="startyear">
+                @for (var d = 2017; d < 2021; d++)
+                {
+                    if (start[2].Equals(d.ToString()))
+                    {
+                        <option selected="selected">@d</option>
+                    }
+                    else
+                    {
+                        <option>@d</option>
+
+                    }
+                }
+            </select>
+            <select class="MDcontrolendday" name="endday">
+                @for (var d = 19; d < 31; d++)
+                {
+                    if (end[0].Equals(d.ToString()))
+                    {
+                        <option selected="selected">@d</option>
+                    }
+                    else
+                    {
+                        <option>@d</option>
+
+                    }
+                }
+            </select>
+            <select class="MDcontrolendmonth" name="endmonth">
+                @for (var d = 5; d < 13; d++)
+                {
+                    if (end[1].Equals(d.ToString()))
+                    {
+                        <option selected="selected">@d</option>
+                    }
+                    else
+                    {
+                        <option>@d</option>
+                    }
+                }
+            </select>
+            <select class="MDcontrolendyears" name="endyear">
+                @for (var d = 2017; d < 2021; d++)
+                {
+                    if (end[2].Equals(d.ToString()))
+                    {
+                        <option selected="selected">@d</option>
+                    }
+                    else
+                    {
+                        <option>@d</option>
+
+                    }
+                }
+            </select>
+            <input type="text" class="MDSetPriceT" name="price" value="@price" required />
+            <select class="ProjectStatusSelect" name="status" >
+                <option class="Fstatus">@status</option>
+                <option>On progress</option>
+                <option>Delivered</option>
+            </select>
+            <input type="submit" value="request" class="requestchanges" />
+        </form>
+        @Html.ActionLink("Delete member", "MDDeleteMember", "MDProfile", null, new { @class = "MDDeleteMember" })
+        @Html.ActionLink("Leave Project", "Leaveproject", "MDProfile", null, new { @class = "MDLeaveProject" })
+        @Html.ActionLink("Back to Current Projects", "MDProfile", "MDProfile", null, new { @class = "BacktocurrentprojectFromControll" })
+    </div>
+</div>

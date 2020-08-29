@@ -1,0 +1,265 @@
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\WebApplication22.dll.config
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\WebApplication22.dll
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\WebApplication22.pdb
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\EntityFramework.dll
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\EntityFramework.SqlServer.dll
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\System.Web.Helpers.dll
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\System.Web.Mvc.dll
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\System.Web.Razor.dll
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\System.Web.Webpages.Deployment.dll
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\System.Web.Webpages.dll
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\System.Web.Webpages.Razor.dll
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\EntityFramework.xml
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\EntityFramework.SqlServer.xml
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\System.Web.Razor.xml
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\System.Web.Webpages.xml
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\System.Web.Webpages.Deployment.xml
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\System.Web.Webpages.Razor.xml
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\System.Web.Helpers.xml
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\bin\System.Web.Mvc.xml
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\obj\Debug\WebApplication22.dll
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\obj\Debug\WebApplication22.pdb
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\obj\Debug\WebApplication22.Migrations.InitialCreate.resources
+c:\users\محمد عادل\documents\visual studio 2013\Projects\WebApplication22\WebApplication22\obj\Debug\WebApplication22.csproj.GenerateResource.Cache
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\WebApplication22.dll.config
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\WebApplication22.dll
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\WebApplication22.pdb
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\EntityFramework.dll
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\EntityFramework.SqlServer.dll
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\System.Web.Helpers.dll
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\System.Web.Razor.dll
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\System.Web.Webpages.Deployment.dll
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\System.Web.Webpages.dll
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\System.Web.Webpages.Razor.dll
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\EntityFramework.xml
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\EntityFramework.SqlServer.xml
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\System.Web.Razor.xml
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\System.Web.Webpages.xml
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\System.Web.Webpages.Deployment.xml
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\System.Web.Webpages.Razor.xml
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\bin\System.Web.Helpers.xml
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\obj\Debug\WebApplication22.csprojResolveAssemblyReference.cache
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\obj\Debug\WebApplication22.Migrations.InitialCreate.resources
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\obj\Debug\WebApplication22.csproj.GenerateResource.Cache
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\obj\Debug\WebApplication22.dll
+C:\Users\MohamedNagy\Desktop\WebApplication22\WebApplication22\obj\Debug\WebApplication22.pdb
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\WebApplication22.dll.config
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\WebApplication22.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\WebApplication22.pdb
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\Antlr3.Runtime.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\EntityFramework.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\EntityFramework.SqlServer.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\Newtonsoft.Json.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\System.Web.Helpers.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\System.Web.Optimization.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\System.Web.Razor.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Deployment.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\System.Web.Webpages.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Razor.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\WebGrease.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\Antlr3.Runtime.pdb
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\EntityFramework.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\EntityFramework.SqlServer.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\Newtonsoft.Json.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\System.Web.Optimization.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\System.Web.Razor.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\System.Web.Webpages.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Deployment.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Razor.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\bin\System.Web.Helpers.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csprojResolveAssemblyReference.cache
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.Migrations.InitialCreate.resources
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csproj.GenerateResource.Cache
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.pdb
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll.config
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.pdb
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\bin\Antlr3.Runtime.pdb
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.SqlServer.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\bin\Newtonsoft.Json.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Optimization.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Razor.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Deployment.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Razor.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Helpers.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Mvc.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csprojResolveAssemblyReference.cache
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.Migrations.InitialCreate.resources
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csproj.GenerateResource.Cache
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.dll
+F:\projects\IA\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.pdb
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll.config
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.pdb
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\bin\Antlr3.Runtime.pdb
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.SqlServer.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\bin\Newtonsoft.Json.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Optimization.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Razor.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Deployment.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Razor.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Helpers.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Mvc.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csprojResolveAssemblyReference.cache
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.Migrations.InitialCreate.resources
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csproj.GenerateResource.Cache
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.pdb
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll.config
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.pdb
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Antlr3.Runtime.pdb
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.SqlServer.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Newtonsoft.Json.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Optimization.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Razor.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Deployment.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Razor.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Helpers.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Mvc.xml
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csprojResolveAssemblyReference.cache
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.Migrations.InitialCreate.resources
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csproj.GenerateResource.Cache
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.dll
+F:\projects\IA\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.pdb
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll.config
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.pdb
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Antlr3.Runtime.pdb
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.SqlServer.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Newtonsoft.Json.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Optimization.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Razor.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Deployment.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Razor.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Helpers.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Mvc.xml
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csprojResolveAssemblyReference.cache
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.Migrations.InitialCreate.resources
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csproj.GenerateResource.Cache
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.dll
+C:\Users\MohamedNagy\Desktop\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.pdb
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll.config
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.pdb
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Antlr3.Runtime.pdb
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.xml
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.SqlServer.xml
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Newtonsoft.Json.xml
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Optimization.xml
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Razor.xml
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.xml
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Deployment.xml
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Razor.xml
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Helpers.xml
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Mvc.xml
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csprojResolveAssemblyReference.cache
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.Migrations.InitialCreate.resources
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csproj.GenerateResource.Cache
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.dll
+C:\Users\محمد عادل\Downloads\New Folder (2)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.pdb
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll.config
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.pdb
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Antlr3.Runtime.pdb
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.xml
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.SqlServer.xml
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Newtonsoft.Json.xml
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Optimization.xml
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Razor.xml
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.xml
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Deployment.xml
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Razor.xml
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Helpers.xml
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Mvc.xml
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csprojResolveAssemblyReference.cache
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.Migrations.InitialCreate.resources
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csproj.GenerateResource.Cache
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.dll
+C:\Users\محمد عادل\Downloads\New Folder (3)\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.pdb
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll.config
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.pdb
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Antlr3.Runtime.pdb
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.xml
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.SqlServer.xml
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Newtonsoft.Json.xml
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Optimization.xml
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Razor.xml
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.xml
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Deployment.xml
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Razor.xml
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Helpers.xml
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Mvc.xml
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csprojResolveAssemblyReference.cache
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.Migrations.InitialCreate.resources
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csproj.GenerateResource.Cache
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.dll
+F:\projects\IA\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.pdb
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csprojResolveAssemblyReference.cache
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.Migrations.InitialCreate.resources
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csproj.GenerateResource.Cache
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.dll
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.pdb
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll.config
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.pdb
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Antlr3.Runtime.pdb
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.xml
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.SqlServer.xml
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Newtonsoft.Json.xml
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Optimization.xml
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Razor.xml
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.xml
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Deployment.xml
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Razor.xml
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Helpers.xml
+C:\Users\محمد عادل\Downloads\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Mvc.xml
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll.config
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.pdb
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Antlr3.Runtime.pdb
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.xml
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.SqlServer.xml
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Newtonsoft.Json.xml
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Optimization.xml
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Razor.xml
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.xml
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Deployment.xml
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Razor.xml
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Helpers.xml
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Mvc.xml
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csprojResolveAssemblyReference.cache
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.Migrations.InitialCreate.resources
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csproj.GenerateResource.Cache
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.dll
+F:\projects\IA\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.pdb
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll.config
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.dll
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\WebApplication22.pdb
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Antlr3.Runtime.pdb
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.xml
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\EntityFramework.SqlServer.xml
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\Newtonsoft.Json.xml
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Optimization.xml
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Razor.xml
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.xml
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Deployment.xml
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Webpages.Razor.xml
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Helpers.xml
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\bin\System.Web.Mvc.xml
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csprojResolveAssemblyReference.cache
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.Migrations.InitialCreate.resources
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.csproj.GenerateResource.Cache
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.dll
+C:\Users\محمد عادل\Downloads\moataz\last5\ProjectsManager\ProjectsManager\ProjectsManager\WebApplication22\obj\Debug\WebApplication22.pdb

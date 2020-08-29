@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+
+@{
+    ViewBag.Title = "TeamleaderRequests";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+<div class="divallinMDProfile">
+    <div class="MDOptions">
+        @Html.ActionLink("Requests", "TeamLeaderRequests", "MDProfile", new { data = TempData["status"] }, new { @class = "teamleaderrequests active" })
+        @Html.ActionLink("Current projects", "TeamleaderCurrent", "MDProfile", new { data = TempData["status"] }, new { @class = "teamleadercurrent" })
+        @Html.ActionLink("History", "TeamleaderHistory", "MDProfile", new { data = TempData["status"] }, new { @class = "teamleaderhistory" })
+        @Html.ActionLink("Quilifications", "TeamLeaderQualifications", "MDProfile", new { data = TempData["status"] }, new { @class = "teamleaderquilifications" })
+    </div>
+    <div class="teamleaderDiv">
+        @foreach (var x in Model)
+        {
+            <div class="teamleaderprojectdiv">
+            @Reuseable.Posts("../../userimages/"+@x.u.photo, @x.p.projectname, @x.u.firstname, @x.p.projectname)
+                @Html.ActionLink("Accept", "AcceptRequest", new {poid = @x.p.projectid,drid=@x.d.id }, new { @class = "teamleaderAccept" })
+                @Html.ActionLink("Refuse", "RefuseRequest", new { poid = @x.p.projectid, drid = @x.d.id }, new { @class = "teamleaderRefuse" })
+
+                </div>
+        }
+    </div>
+</div>

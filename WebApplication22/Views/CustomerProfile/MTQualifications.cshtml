@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "MTQualifications";
+    Layout = "~/Views/Shared/_CustomerProfile.cshtml";
+}
+
+<div class="divallinCustomerProfile">
+    <div class="CustomerOptions">
+        @Html.ActionLink("Requests", "MTRequests", "CustomerProfile", new { data = TempData["status"] }, new { @class = "MTRequests" })
+        @Html.ActionLink("Current Projects", "MTCurrentProjects", "CustomerProfile", null, new { @class = "MTCurrentProjects" })
+        @Html.ActionLink("Qulifications", "MTQualifications", "CustomerProfile", null, new { @class = "MTQualifications active" })
+        @Html.ActionLink("History", "MTHistory", "CustomerProfile", null, new { @class = "MTHistory" })
+    </div>
+        <div class="MTQualificationsDiv">
+            <input type="number" class="Java disabled" value="@ViewData["allprojects"]" disabled />
+            <input type="number" class="Python disabled" value="@ViewData["finishprojects"]" disabled />
+            <input type="number" class="Asp disabled" placeholder="Asp" value="@ViewData["workingprojects"]" disabled />
+            <input type="number" class="Php disabled" placeholder="Php" value="@ViewData["feedbacks"]" disabled />
+
+            <button class="EnableChart">Edit Qualifications</button>
+            <button class="ShowChart">Show chart</button>
+            <div class="piechartdiv"> <canvas id="MTPieChart"></canvas> </div>
+
+
+
+
+        </div>
+    </div>
+

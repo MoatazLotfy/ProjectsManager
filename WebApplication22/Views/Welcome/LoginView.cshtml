@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title ="LoginView";
+    Layout = "~/Views/Shared/_Welcome.cshtml";
+}
+
+<div class="PopUpBG">
+
+    <div class="LoginPopUp">
+       
+        <button class="x">x</button>
+@{
+    using (Html.BeginForm("LoginView", "Welcome", FormMethod.Post))
+    {
+        
+        <img src="~/images/login-w-icon.png" class="loginimage"><br>
+        <input type="email" name="email" class="email" placeholder="Email" id="email"><br>
+        <input type="password" name="password" class="password" placeholder="Password" id="password"><br>
+        <input type="submit" name="submit" class="submit"><br>
+}
+        <ul class="dots">
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+        </ul>
+        <span class="RegisterSpan">If you don't have account just</span>@Html.ActionLink("Sign Up", "register", "Welcome", null, new { @class = "ToRegister" })<br>
+
+    
+}
+     </div>
+</div>

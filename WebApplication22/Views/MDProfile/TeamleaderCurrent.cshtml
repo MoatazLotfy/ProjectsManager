@@ -1,0 +1,31 @@
+﻿@model IEnumerable<WebApplication22.Models.viewmodel>
+@{
+    ViewBag.Title = "TeamleaderCurrent";
+    Layout = "~/Views/Shared/_MDProfile.cshtml";
+}
+
+<div class="divallinMDProfile">
+    <div class="MDOptions">
+        @Html.ActionLink("Requests", "TeamLeaderRequests", "MDProfile", new { data = TempData["status"] }, new { @class = "teamleaderrequests" })
+        @Html.ActionLink("Current projects", "TeamleaderCurrent", "MDProfile", new { data = TempData["status"] }, new { @class = "teamleadercurrent active" })
+        @Html.ActionLink("History", "TeamleaderHistory", "MDProfile", new { data = TempData["status"] }, new { @class = "teamleaderhistory" })
+        @Html.ActionLink("Quilifications", "TeamLeaderQualifications", "MDProfile", new { data = TempData["status"] }, new { @class = "teamleaderquilifications" })
+    </div>
+    <div class="teamleaderDiv">
+        @foreach (var x in Model)
+        {
+
+
+            <div class="teamleaderprojectdiv">
+                
+                @Reuseable.Posts("../../userimages/"+@x.u.photo, @x.p.projectname, @x.u.firstname, @x.p.describtion)
+                @Html.ActionLink("Add trainee", "TeamLeaderAddTrainee", "MDProfile", new {poid=@x.p.projectid }, new { @class = "teamleaderAddtrainee" })
+                @Html.ActionLink("Evaluate trainee", "TeamLeaderEvaluateMT", "MDProfile", new {poid=@x.p.projectid}, new { @class = "teamleaderEvaluatetrainee" })
+                @Html.ActionLink("Leave", "TeamLeaderLEave", "MDProfile", new {poid=@x.p.projectid}, new { @class = "teamleaderleaveproject" })
+               
+
+            </div>
+        }
+    </div>
+</div>
+
