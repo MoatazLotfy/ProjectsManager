@@ -1,0 +1,8 @@
+@helper Posts(String imagename, String ProjectName, String ClientName, String Description) { 
+     
+             
+                        <img src="@imagename" class="indexpostsimg">
+                        <label class="homeclient">Client: </label><span class="homeclientS">@ClientName</span>
+                        <label class="homeprojectname">Project Name : </label><span class="homeprojectnameS">@ProjectName</span><br />
+                        <p class="homedesc"> @Description</p>
+    }
